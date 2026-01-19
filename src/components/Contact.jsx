@@ -32,7 +32,7 @@ function Contact() {
             } else {
                 throw new Error('Failed to send message')
             }
-        } catch (error) {
+        } catch (_error) {
             setStatus({ type: 'error', message: 'Failed to send message. Please try again or contact us directly.' })
         } finally {
             setLoading(false)

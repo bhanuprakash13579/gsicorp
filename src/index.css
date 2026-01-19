@@ -343,7 +343,7 @@ input, textarea {
 
 .navbar-links a {
   font-weight: 500;
-  color: var(--text-secondary);
+  color: var(--text-primary);
   transition: var(--transition-fast);
   position: relative;
 }

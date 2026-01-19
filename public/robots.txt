@@ -1,0 +1,8 @@
+# GSI Corp Robots.txt
+# Allow all search engines to crawl all content
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://gsicorp.in/sitemap.xml

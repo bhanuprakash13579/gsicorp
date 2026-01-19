@@ -35,7 +35,7 @@ function Hero() {
 
                     <div className="hero-stats">
                         <div className="hero-stat">
-                            <h3>5+</h3>
+                            <h3>15+</h3>
                             <p>Projects Delivered</p>
                         </div>
                         <div className="hero-stat">
@@ -43,7 +43,7 @@ function Hero() {
                             <p>Client Satisfaction</p>
                         </div>
                         <div className="hero-stat">
-                            <h3>3+</h3>
+                            <h3>5+</h3>
                             <p>Years Experience</p>
                         </div>
                     </div>
