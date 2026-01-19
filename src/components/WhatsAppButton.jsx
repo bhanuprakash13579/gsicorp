@@ -1,5 +1,5 @@
 function WhatsAppButton() {
-    const phoneNumber = '917997860051'
+    const phoneNumber = import.meta.env.VITE_WHATSAPP_NUMBER
     const message = 'Hello! I am interested in your services.'
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
 

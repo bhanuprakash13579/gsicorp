@@ -47,8 +47,8 @@ function Contact() {
                 </svg>
             ),
             label: 'Phone',
-            value: '+91 7997860051',
-            href: 'tel:+917997860051'
+            value: `+91 ${import.meta.env.VITE_CONTACT_PHONE}`,
+            href: `tel:+91${import.meta.env.VITE_CONTACT_PHONE}`
         },
         {
             icon: (
@@ -58,8 +58,8 @@ function Contact() {
                 </svg>
             ),
             label: 'Email',
-            value: 'contact@gsicorp.in',
-            href: 'mailto:contact@gsicorp.in'
+            value: import.meta.env.VITE_CONTACT_EMAIL,
+            href: `mailto:${import.meta.env.VITE_CONTACT_EMAIL}`
         },
         {
             icon: (
@@ -68,8 +68,8 @@ function Contact() {
                 </svg>
             ),
             label: 'WhatsApp',
-            value: '+91 7997860051',
-            href: 'https://wa.me/917997860051'
+            value: `+91 ${import.meta.env.VITE_CONTACT_PHONE}`,
+            href: `https://wa.me/${import.meta.env.VITE_WHATSAPP_NUMBER}`
         }
     ]
 
