@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSI Corp Logo Concepts - Round 19</title>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #0a0f1c;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 2rem;
+        }
+
+        h1 {
+            margin-bottom: 0.5rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            margin-bottom: 3rem;
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+
+        .concepts-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            max-width: 1400px;
+            width: 100%;
+        }
+
+        .concept-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 1rem;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .concept-card:hover {
+            transform: translateY(-5px);
+            border-color: #3b82f6;
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .logo-box {
+            width: 100%;
+            aspect-ratio: 1;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #05080f;
+            /* Dark Check */
+            border-radius: 0.5rem;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .logo-box.light {
+            background: #f3f4f6;
+            /* Light Check */
+        }
+
+        .logo-box svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            color: #9ca3af;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            font-size: 0.9rem;
+            color: #6b7280;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>LOGO CONCEPTS - ROUND 19</h1>
+    <span class="subtitle">Fresh Directions: Monogram, Abstract, Shield</span>
+
+    <div class="concepts-container">
+        <!-- Concept 53: The Interlocking Monogram -->
+        <div class="concept-card">
+            <div class="logo-box">
+                <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="monoGrad" x1="0" y1="0" x2="500" y2="500">
+                            <stop offset="0%" stop-color="#3b82f6" />
+                            <stop offset="100%" stop-color="#2563eb" />
+                        </linearGradient>
+                    </defs>
+                    <!-- Abstract G S I interlocking -->
+                    <circle cx="250" cy="250" r="180" stroke="url(#monoGrad)" stroke-width="40" stroke-linecap="round"
+                        fill="none" />
+                    <path d="M250 150 V350" stroke="url(#monoGrad)" stroke-width="40" stroke-linecap="round" />
+                    <path d="M150 250 H350" stroke="url(#monoGrad)" stroke-width="40" stroke-linecap="round" />
+                    <!-- White dots for tech feel -->
+                    <circle cx="250" cy="250" r="30" fill="white" />
+                </svg>
+            </div>
+            <h2>Option 53: The Cross-Tech</h2>
+            <p>A circle connected by a cross-hair grid. Represents precision, targeting, and global reach. Very
+                balanced.</p>
+        </div>
+
+        <!-- Concept 54: The Apex Arrow -->
+        <div class="concept-card">
+            <div class="logo-box">
+                <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="apexGrad" x1="0" y1="0" x2="500" y2="500">
+                            <stop offset="0%" stop-color="#0ea5e9" />
+                            <stop offset="100%" stop-color="#3b82f6" />
+                        </linearGradient>
+                    </defs>
+                    <!-- Upward Arrow / Mountain abstract -->
+                    <path d="M250 100 L400 350 H100 L250 100 Z" fill="url(#apexGrad)" />
+                    <!-- Negative space line cutting through -->
+                    <path d="M200 350 L250 250 L300 350" stroke="#0a0f1c" stroke-width="30" fill="none" />
+                </svg>
+            </div>
+            <h2>Option 54: The Apex Arrow</h2>
+            <p>A solid triangular arrow pointing up. The "cut" creates a hidden "A" or arrowshape. Symbolizes growth and
+                peak performance.</p>
+        </div>
+
+        <!-- Concept 55: The Tech Shield -->
+        <div class="concept-card">
+            <div class="logo-box">
+                <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="shieldGrad" x1="0" y1="0" x2="500" y2="500">
+                            <stop offset="0%" stop-color="#6366f1" />
+                            <stop offset="100%" stop-color="#8b5cf6" />
+                        </linearGradient>
+                    </defs>
+                    <!-- Shield Outline -->
+                    <path d="M250 450 C150 400 100 300 100 150 H400 C400 300 350 400 250 450 Z" fill="none"
+                        stroke="url(#shieldGrad)" stroke-width="30" />
+                    <!-- Digital Core -->
+                    <rect x="220" y="200" width="60" height="60" rx="10" fill="white" />
+                    <path d="M250 200 V150 M250 260 V450" stroke="url(#shieldGrad)" stroke-width="20" />
+                    <path d="M220 230 H100 M280 230 H400" stroke="url(#shieldGrad)" stroke-width="20" />
+                </svg>
+            </div>
+            <h2>Option 55: The Tech Shield</h2>
+            <p>A minimalist shield outline with a digital circuit core. Represents security, trust, and modern
+                infrastructure.</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

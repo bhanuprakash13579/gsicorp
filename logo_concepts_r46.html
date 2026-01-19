@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSI Corp Logo Concepts - Round 46</title>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #0a0f1c;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 2rem;
+        }
+
+        h1 {
+            margin-bottom: 0.5rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            margin-bottom: 3rem;
+            color: #22d3ee;
+            /* Cyan for Tech Polish */
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .concepts-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            max-width: 1400px;
+            width: 100%;
+        }
+
+        .concept-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 1rem;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .concept-card:hover {
+            transform: translateY(-5px);
+            border-color: #22d3ee;
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .check-container {
+            width: 100%;
+            display: flex;
+            gap: 10px;
+            margin-bottom: 1.5rem;
+        }
+
+        .logo-box {
+            flex: 1;
+            aspect-ratio: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .logo-box.dark {
+            background: #05080f;
+            border: 1px solid #1f2937;
+        }
+
+        .logo-box.light {
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+        }
+
+        .logo-box svg {
+            width: 80%;
+            height: 80%;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            color: #e5e7eb;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            font-size: 0.9rem;
+            color: #9ca3af;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>LOGO CONCEPTS - ROUND 46</h1>
+    <span class="subtitle">The Integrated Series (10 Variations of Option 150)</span>
+
+    <div class="concepts-container">
+
+        <!-- Concept 151: Direct Contact -->
+        <div class="concept-card">
+            <div class="check-container">
+                <div class="logo-box dark">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- G extension creates roof, touching S and I top -->
+                        <path d="M420 120 H50 V380 H150 V280 H100" stroke="#3b82f6" stroke-width="0" fill="#3b82f6" />
+                        <!-- Solid G -->
+                        <!-- S Body, tucks right under G roof -->
+                        <path d="M420 400 H50 V310 H320 V210 H180 V120" stroke="white" stroke-width="0" fill="white" />
+                        <!-- S actually needs to look like S. -->
+                        <!-- Let's retry distinct shapes but tight spacing -->
+
+                        <!-- G -->
+                        <path d="M50 100 H450 V180 H150 V300 H50 V100" fill="#3b82f6" />
+                        <rect x="50" y="220" width="100" height="80" fill="#3b82f6" /> <!-- G mid -->
+
+                        <!-- S (extending left under G) -->
+                        <path d="M300 220 H200 V300 H300 V380 H50 V450 H380 V220 H300" fill="white" />
+
+                        <!-- I -->
+                        <rect x="400" y="220" width="50" height="230" fill="white" />
+                    </svg>
+                </div>
+                <div class="logo-box light">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M50 100 H450 V180 H150 V300 H50 V100" fill="#3b82f6" />
+                        <rect x="50" y="220" width="100" height="80" fill="#3b82f6" />
+                        <path d="M300 220 H200 V300 H300 V380 H50 V450 H380 V220 H300" fill="#0f172a" />
+                        <rect x="400" y="220" width="50" height="230" fill="#0f172a" />
+                    </svg>
+                </div>
+            </div>
+            <h2>Option 151: Direct Contact</h2>
+            <p><strong>Variation:</strong> Zero Gap. The S lines physically touch the G area. Highly geometric,
+                brick-like locking mechanism.</p>
+        </div>
+
+        <!-- Concept 152: The Fused Beam -->
+        <div class="concept-card">
+            <div class="check-container">
+                <div class="logo-box dark">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="fusedGrad" x1="0" y1="0" x2="500" y2="0">
+                                <stop offset="0%" stop-color="#10b981" />
+                                <stop offset="100%" stop-color="#3b82f6" />
+                            </linearGradient>
+                        </defs>
+                        <!-- G Top Bar fuses to I top? -->
+                        <path d="M50 150 H450 V400 H380 V220 H320" stroke="url(#fusedGrad)" stroke-width="40"
+                            stroke-linecap="square" fill="none" /> <!-- G Top + I connection? -->
+                        <!-- No, stick to G-S-I order strictness but fuse horizontal beams -->
+
+                        <!-- G Top Beam -->
+                        <path d="M50 150 H450" stroke="url(#fusedGrad)" stroke-width="50" stroke-linecap="square" />
+                        <!-- G Body -->
+                        <path d="M100 200 V350 H180" stroke="white" stroke-width="40" stroke-linecap="square"
+                            fill="none" />
+                        <path d="M100 280 H180" stroke="white" stroke-width="40" />
+
+                        <!-- S Body + Bottom Beam -->
+                        <!-- S Bottom Beam -->
+                        <path d="M50 420 H350" stroke="url(#fusedGrad)" stroke-width="50" stroke-linecap="square" />
+                        <!-- S Snake -->
+                        <path d="M220 200 H320 V300 H250 V380" stroke="white" stroke-width="40" stroke-linecap="square"
+                            fill="none" />
+
+                        <!-- I Stalk -->
+                        <path d="M400 200 V350" stroke="white" stroke-width="40" stroke-linecap="square" />
+                    </svg>
+                </div>
+                <div class="logo-box light">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="fusedGrad2" x1="0" y1="0" x2="500" y2="0">
+                                <stop offset="0%" stop-color="#10b981" />
+                                <stop offset="100%" stop-color="#3b82f6" />
+                            </linearGradient>
+                        </defs>
+                        <path d="M50 150 H450" stroke="url(#fusedGrad2)" stroke-width="50" stroke-linecap="square" />
+                        <path d="M100 200 V350 H180" stroke="#0f172a" stroke-width="40" stroke-linecap="square"
+                            fill="none" />
+                        <path d="M100 280 H180" stroke="#0f172a" stroke-width="40" />
+
+                        <path d="M50 420 H350" stroke="url(#fusedGrad2)" stroke-width="50" stroke-linecap="square" />
+                        <path d="M220 200 H320 V300 H250 V380" stroke="#0f172a" stroke-width="40"
+                            stroke-linecap="square" fill="none" />
+
+                        <path d="M400 200 V350" stroke="#0f172a" stroke-width="40" stroke-linecap="square" />
+                    </svg>
+                </div>
+            </div>
+            <h2>Option 152: The Fused Beam</h2>
+            <p><strong>Variation:</strong> Heavy Bars. The G-Roof and S-Floor are thickened into colored structural
+                beams. The letters hang/stand from them.</p>
+        </div>
+
+        <!-- Concept 153: Heavy Industry -->
+        <div class="concept-card">
+            <div class="check-container">
+                <div class="logo-box dark">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M50 100 H450 V200 H150 V300 H50 V100" fill="#f59e0b" /> <!-- G Massive Block -->
+                        <rect x="50" y="240" width="100" height="60" fill="black" opacity="0.3" /> <!-- Definition -->
+
+                        <path d="M50 400 H350 V300 H250 V200 H200 V400 H50" fill="white" /> <!-- S Foundation -->
+                        <path d="M250 300 H350" stroke="black" stroke-width="5" />
+
+                        <rect x="400" y="220" width="50" height="180" fill="white" /> <!-- I Pillar -->
+                    </svg>
+                </div>
+                <div class="logo-box light">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M50 100 H450 V200 H150 V300 H50 V100" fill="#f59e0b" />
+                        <rect x="50" y="240" width="100" height="60" fill="white" opacity="0.5" />
+
+                        <path d="M50 400 H350 V300 H250 V200 H200 V400 H50" fill="#0f172a" />
+                        <path d="M250 300 H350" stroke="white" stroke-width="5" />
+
+                        <rect x="400" y="220" width="50" height="180" fill="#0f172a" />
+                    </svg>
+                </div>
+            </div>
+            <h2>Option 153: Heavy Industry</h2>
+            <p><strong>Variation:</strong> Solid Blocks. Ultra-heavy weight. Looks like construction equipment or
+                stamped steel.</p>
+        </div>
+
+        <!-- Concept 154: The Aero Link -->
+        <div class="concept-card">
+            <div class="check-container">
+                <div class="logo-box dark">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g transform="skewX(-15)">
+                            <!-- G Top Beam, rounded ends -->
+                            <path d="M50 150 H450" stroke="#3b82f6" stroke-width="40" stroke-linecap="round" />
+                            <!-- G Body connected -->
+                            <path d="M80 150 V300 C80 340 100 350 140 350 H160" stroke="#3b82f6" stroke-width="40"
+                                stroke-linecap="round" fill="none" />
+                            <path d="M100 280 H150" stroke="#3b82f6" stroke-width="40" stroke-linecap="round" />
+
+                            <!-- S Body -->
+                            <path d="M300 180 H250 C220 180 220 250 250 250 C280 250 280 320 250 320" stroke="white"
+                                stroke-width="40" stroke-linecap="round" fill="none" />
+                            <!-- S Bottom Beam -->
+                            <path d="M250 350 H50" stroke="white" stroke-width="40" stroke-linecap="round" />
+
+                            <!-- I -->
+                            <path d="M400 180 V350" stroke="white" stroke-width="40" stroke-linecap="round" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="logo-box light">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g transform="skewX(-15)">
+                            <path d="M50 150 H450" stroke="#3b82f6" stroke-width="40" stroke-linecap="round" />
+                            <path d="M80 150 V300 C80 340 100 350 140 350 H160" stroke="#3b82f6" stroke-width="40"
+                                stroke-linecap="round" fill="none" />
+                            <path d="M100 280 H150" stroke="#3b82f6" stroke-width="40" stroke-linecap="round" />
+
+                            <path d="M300 180 H250 C220 180 220 250 250 250 C280 250 280 320 250 320" stroke="#0f172a"
+                                stroke-width="40" stroke-linecap="round" fill="none" />
+                            <path d="M250 350 H50" stroke="#0f172a" stroke-width="40" stroke-linecap="round" />
+
+                            <path d="M400 180 V350" stroke="#0f172a" stroke-width="40" stroke-linecap="round" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <h2>Option 154: The Aero Link</h2>
+            <p><strong>Variation:</strong> Rounded Speed. Smooth, rounded terminals. Italicized for motion. Friendly but
+                tech-forward.</p>
+        </div>
+
+        <!-- Concept 155: Cyber Edge -->
+        <div class="concept-card">
+            <div class="check-container">
+                <div class="logo-box dark">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Sharp, 45 degree cuts -->
+                        <!-- G -->
+                        <path d="M450 120 L420 150 H130 L100 180 V300 L130 330 H180" stroke="#ec4899" stroke-width="20"
+                            fill="none" />
+                        <path d="M130 250 H180" stroke="#ec4899" stroke-width="20" />
+
+                        <!-- S -->
+                        <path d="M320 200 H250 L220 230 V270 L250 300 H280 L310 330 V370 L280 400 H50" stroke="white"
+                            stroke-width="20" fill="none" />
+
+                        <!-- I -->
+                        <path d="M400 200 L430 230 V370 L400 400" stroke="white" stroke-width="20" fill="none" />
+                    </svg>
+                </div>
+                <div class="logo-box light">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- G -->
+                        <path d="M450 120 L420 150 H130 L100 180 V300 L130 330 H180" stroke="#ec4899" stroke-width="20"
+                            fill="none" />
+                        <path d="M130 250 H180" stroke="#ec4899" stroke-width="20" />
+
+                        <!-- S -->
+                        <path d="M320 200 H250 L220 230 V270 L250 300 H280 L310 330 V370 L280 400 H50" stroke="#0f172a"
+                            stroke-width="20" fill="none" />
+
+                        <!-- I -->
+                        <path d="M400 200 L430 230 V370 L400 400" stroke="#0f172a" stroke-width="20" fill="none" />
+                    </svg>
+                </div>
+            </div>
+            <h2>Option 155: Cyber Edge</h2>
+            <p><strong>Variation:</strong> Outline Tech. Thin, sharp outlines with 45-degree chamfered corners.
+                Precision engineering look.</p>
+        </div>
+
+        <!-- Concept 156: Quantum Weave -->
+        <div class="concept-card">
+            <div class="check-container">
+                <div class="logo-box dark">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Lines weaving over/under -->
+                        <!-- G Top Line -->
+                        <path d="M50 150 H450" stroke="#8b5cf6" stroke-width="30" stroke-linecap="round" />
+
+                        <!-- I Vertical (goes OVER G line?) No, under G line -->
+                        <path d="M400 180 V400" stroke="white" stroke-width="30" stroke-linecap="round" />
+
+                        <!-- S Bottom Line -->
+                        <path d="M350 350 H50" stroke="white" stroke-width="30" stroke-linecap="round" />
+
+                        <!-- G Body -->
+                        <path d="M100 180 V320 H180" stroke="#8b5cf6" stroke-width="30" stroke-linecap="round"
+                            fill="none" />
+                        <path d="M100 250 H150" stroke="#8b5cf6" stroke-width="30" stroke-linecap="round" />
+
+                        <!-- S Body -->
+                        <path d="M300 200 H250 C220 200 220 250 250 250 C280 250 280 300 250 300" stroke="white"
+                            stroke-width="30" stroke-linecap="round" fill="none" />
+                    </svg>
+                </div>
+                <div class="logo-box light">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M50 150 H450" stroke="#8b5cf6" stroke-width="30" stroke-linecap="round" />
+                        <path d="M400 180 V400" stroke="#0f172a" stroke-width="30" stroke-linecap="round" />
+                        <path d="M350 350 H50" stroke="#0f172a" stroke-width="30" stroke-linecap="round" />
+                        <path d="M100 180 V320 H180" stroke="#8b5cf6" stroke-width="30" stroke-linecap="round"
+                            fill="none" />
+                        <path d="M100 250 H150" stroke="#8b5cf6" stroke-width="30" stroke-linecap="round" />
+                        <path d="M300 200 H250 C220 200 220 250 250 250 C280 250 280 300 250 300" stroke="#0f172a"
+                            stroke-width="30" stroke-linecap="round" fill="none" />
+                    </svg>
+                </div>
+            </div>
+            <h2>Option 156: Quantum Weave</h2>
+            <p><strong>Variation:</strong> Layered. The extensions and letters overlap with depth (layering order).
+                Feels assembled.</p>
+        </div>
+
+        <!-- Concept 157: Stencil Block -->
+        <div class="concept-card">
+            <div class="check-container">
+                <div class="logo-box dark">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- G -->
+                        <path d="M450 120 H50 V380 H150 V280 H100" stroke="#f59e0b" stroke-width="0" fill="#f59e0b" />
+                        <!-- Stencil cut in G corner -->
+                        <line x1="50" y1="120" x2="100" y2="170" stroke="#0a0f1c" stroke-width="5" />
+
+                        <!-- S -->
+                        <path d="M350 220 H250 V300 H300 V380 H50 V450 H350 V220" fill="white" />
+                        <!-- Stencil cut in S -->
+                        <line x1="300" y1="300" x2="350" y2="350" stroke="#0a0f1c" stroke-width="5" />
+
+                        <!-- I -->
+                        <rect x="400" y="220" width="50" height="230" fill="#f59e0b" />
+                    </svg>
+                </div>
+                <div class="logo-box light">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M450 120 H50 V380 H150 V280 H100" stroke="#f59e0b" stroke-width="0" fill="#f59e0b" />
+                        <line x1="50" y1="120" x2="100" y2="170" stroke="white" stroke-width="5" />
+
+                        <path d="M350 220 H250 V300 H300 V380 H50 V450 H350 V220" fill="#0f172a" />
+                        <line x1="300" y1="300" x2="350" y2="350" stroke="white" stroke-width="5" />
+
+                        <rect x="400" y="220" width="50" height="230" fill="#f59e0b" />
+                    </svg>
+                </div>
+            </div>
+            <h2>Option 157: Stencil Block</h2>
+            <p><strong>Variation:</strong> Cargo/Shipping. Solid blocks with stencil cutouts. "No gap" in spacing, but
+                cuts for style.</p>
+        </div>
+
+        <!-- Concept 158: Kinetic Slab -->
+        <div class="concept-card">
+            <div class="check-container">
+                <div class="logo-box dark">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="kinGrad" x1="0" y1="0" x2="500" y2="0">
+                                <stop offset="0%" stop-color="#ef4444" />
+                                <stop offset="100%" stop-color="#f59e0b" />
+                            </linearGradient>
+                        </defs>
+                        <!-- G Top as Arrow -->
+                        <path d="M50 150 H420 L450 180 L420 210 H120" stroke="url(#kinGrad)" stroke-width="0"
+                            fill="url(#kinGrad)" />
+                        <path d="M120 210 V350 H180" stroke="white" stroke-width="30" stroke-linecap="round"
+                            fill="none" />
+
+                        <!-- S Bottom as Arrow -->
+                        <path d="M420 380 H80 L50 350 L80 320 H350" stroke="url(#kinGrad)" stroke-width="0"
+                            fill="url(#kinGrad)" />
+
+                        <!-- S Body -->
+                        <path d="M300 230 H250 C230 230 230 270 250 270 C270 270 270 320 250 320" stroke="white"
+                            stroke-width="30" stroke-linecap="round" fill="none" />
+
+                        <!-- I -->
+                        <path d="M400 230 V320" stroke="white" stroke-width="30" stroke-linecap="round" />
+                    </svg>
+                </div>
+                <div class="logo-box light">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="kinGrad2" x1="0" y1="0" x2="500" y2="0">
+                                <stop offset="0%" stop-color="#ef4444" />
+                                <stop offset="100%" stop-color="#f59e0b" />
+                            </linearGradient>
+                        </defs>
+                        <path d="M50 150 H420 L450 180 L420 210 H120" stroke="url(#kinGrad2)" stroke-width="0"
+                            fill="url(#kinGrad2)" />
+                        <path d="M120 210 V350 H180" stroke="#0f172a" stroke-width="30" stroke-linecap="round"
+                            fill="none" />
+
+                        <path d="M420 380 H80 L50 350 L80 320 H350" stroke="url(#kinGrad2)" stroke-width="0"
+                            fill="url(#kinGrad2)" />
+
+                        <path d="M300 230 H250 C230 230 230 270 250 270 C270 270 270 320 250 320" stroke="#0f172a"
+                            stroke-width="30" stroke-linecap="round" fill="none" />
+
+                        <path d="M400 230 V320" stroke="#0f172a" stroke-width="30" stroke-linecap="round" />
+                    </svg>
+                </div>
+            </div>
+            <h2>Option 158: Kinetic Slab</h2>
+            <p><strong>Variation:</strong> Directional. The extensions have arrow-heads, emphasizing speed right and
+                speed left.</p>
+        </div>
+
+        <!-- Concept 159: Infinity Trace -->
+        <div class="concept-card">
+            <div class="check-container">
+                <div class="logo-box dark">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Single Continuous Line illusion -->
+                        <path d="M450 120 H50 V350 H150 V250 H90" stroke="white" stroke-width="20"
+                            stroke-linecap="round" fill="none" /> <!-- G -->
+
+                        <path d="M180 250 H300 V300 H230 V350 H50" stroke="#22d3ee" stroke-width="20"
+                            stroke-linecap="round" fill="none" /> <!-- S -->
+
+                        <path d="M400 180 V350" stroke="white" stroke-width="20" stroke-linecap="round" /> <!-- I -->
+                    </svg>
+                </div>
+                <div class="logo-box light">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M450 120 H50 V350 H150 V250 H90" stroke="#0f172a" stroke-width="20"
+                            stroke-linecap="round" fill="none" />
+                        <path d="M180 250 H300 V300 H230 V350 H50" stroke="#22d3ee" stroke-width="20"
+                            stroke-linecap="round" fill="none" />
+                        <path d="M400 180 V350" stroke="#0f172a" stroke-width="20" stroke-linecap="round" />
+                    </svg>
+                </div>
+            </div>
+            <h2>Option 159: Infinity Trace</h2>
+            <p><strong>Variation:</strong> Neon Line. Thin, continuous neon tubing style. Minimalist and very modern.
+            </p>
+        </div>
+
+        <!-- Concept 160: The Monolith -->
+        <div class="concept-card">
+            <div class="check-container">
+                <div class="logo-box dark">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="monoGrad" x1="0" y1="0" x2="500" y2="500">
+                                <stop offset="0%" stop-color="#4b5563" />
+                                <stop offset="100%" stop-color="#1f2937" />
+                            </linearGradient>
+                        </defs>
+                        <!-- Solid slab background shaped like the G/S lock -->
+                        <!-- Background Shape -->
+                        <path d="M50 100 H450 V200 H350 V300 H450 V400 H50 V300 H150 V200 H50 V100"
+                            fill="url(#monoGrad)" />
+
+                        <!-- Letter Knockouts -->
+                        <text x="100" y="280" font-family="Inter, sans-serif" font-weight="900" font-size="150"
+                            fill="white">G</text>
+                        <text x="250" y="280" font-family="Inter, sans-serif" font-weight="900" font-size="150"
+                            fill="white">S</text>
+                        <text x="400" y="280" font-family="Inter, sans-serif" font-weight="900" font-size="150"
+                            fill="white">I</text>
+                    </svg>
+                </div>
+                <div class="logo-box light">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="monoGrad2" x1="0" y1="0" x2="500" y2="500">
+                                <stop offset="0%" stop-color="#4b5563" />
+                                <stop offset="100%" stop-color="#1f2937" />
+                            </linearGradient>
+                        </defs>
+                        <path d="M50 100 H450 V200 H350 V300 H450 V400 H50 V300 H150 V200 H50 V100"
+                            fill="url(#monoGrad2)" />
+
+                        <text x="100" y="280" font-family="Inter, sans-serif" font-weight="900" font-size="150"
+                            fill="white">G</text>
+                        <text x="250" y="280" font-family="Inter, sans-serif" font-weight="900" font-size="150"
+                            fill="white">S</text>
+                        <text x="400" y="280" font-family="Inter, sans-serif" font-weight="900" font-size="150"
+                            fill="white">I</text>
+                    </svg>
+                </div>
+            </div>
+            <h2>Option 160: The Monolith</h2>
+            <p><strong>Variation:</strong> Negative Space. The letterforms are cut out of a solid metal slab that
+                follows the G-Right/S-Left geometry.</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

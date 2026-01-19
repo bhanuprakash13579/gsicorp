@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSI Corp Logo Concepts - Round 26</title>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #0a0f1c;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 2rem;
+        }
+
+        h1 {
+            margin-bottom: 0.5rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            margin-bottom: 3rem;
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+
+        .concepts-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            max-width: 1400px;
+            width: 100%;
+        }
+
+        .concept-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 1rem;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .concept-card:hover {
+            transform: translateY(-5px);
+            border-color: #3b82f6;
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .check-container {
+            width: 100%;
+            display: flex;
+            gap: 10px;
+            margin-bottom: 1.5rem;
+        }
+
+        .logo-box {
+            flex: 1;
+            aspect-ratio: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .logo-box.dark {
+            background: #05080f;
+            border: 1px solid #1f2937;
+        }
+
+        .logo-box.light {
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+        }
+
+        .logo-box svg {
+            width: 80%;
+            height: 80%;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            color: #9ca3af;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            font-size: 0.9rem;
+            color: #6b7280;
+            line-height: 1.5;
+        }
+
+        .label {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            font-size: 0.7rem;
+            opacity: 0.5;
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>LOGO CONCEPTS - ROUND 26</h1>
+    <span class="subtitle">Structural Illusions & Flow (The "Smart Geometries")</span>
+
+    <div class="concepts-container">
+
+        <!-- Concept 74: The Impossible GSI -->
+        <div class="concept-card">
+            <div class="check-container">
+                <div class="logo-box dark">
+                    <span class="label">Dark BG</span>
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="imp2Grad" x1="0" y1="0" x2="500" y2="500">
+                                <stop offset="0%" stop-color="#3b82f6" />
+                                <stop offset="100%" stop-color="#8b5cf6" />
+                            </linearGradient>
+                        </defs>
+                        <!-- Impossible Beams Forming G S I -->
+                        <!-- Start with a solid Penrose style framework -->
+                        <path d="M100 150 H200 L250 200 H150 L100 150" fill="url(#imp2Grad)" opacity="0.8" />
+                        <path d="M100 150 V300 L150 250 V200" fill="url(#imp2Grad)" />
+                        <path d="M150 300 H250 V250 H150" fill="url(#imp2Grad)" opacity="0.6" />
+
+                        <!-- S shape illusion -->
+                        <path d="M280 150 H380 V200 L330 250 H280 V150" fill="url(#imp2Grad)" opacity="0.8" />
+                        <path d="M330 250 V300 H430 V250 H330" fill="url(#imp2Grad)" />
+
+                        <!-- I shape straight beam -->
+                        <path d="M450 150 V350 H490 V150 H450" fill="url(#imp2Grad)" />
+
+                        <!-- White Accent Lines to force the perspective -->
+                        <path d="M150 150 L200 200" stroke="white" stroke-width="2" />
+                        <path d="M330 250 L380 200" stroke="white" stroke-width="2" />
+                    </svg>
+                </div>
+                <div class="logo-box light">
+                    <span class="label">White BG</span>
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="imp2Grad2" x1="0" y1="0" x2="500" y2="500">
+                                <stop offset="0%" stop-color="#3b82f6" />
+                                <stop offset="100%" stop-color="#8b5cf6" />
+                            </linearGradient>
+                        </defs>
+                        <!-- Impossible Beams Forming G S I -->
+                        <path d="M100 150 H200 L250 200 H150 L100 150" fill="url(#imp2Grad2)" opacity="0.8" />
+                        <path d="M100 150 V300 L150 250 V200" fill="url(#imp2Grad2)" />
+                        <path d="M150 300 H250 V250 H150" fill="url(#imp2Grad2)" opacity="0.6" />
+                        <path d="M280 150 H380 V200 L330 250 H280 V150" fill="url(#imp2Grad2)" opacity="0.8" />
+                        <path d="M330 250 V300 H430 V250 H330" fill="url(#imp2Grad2)" />
+                        <path d="M450 150 V350 H490 V150 H450" fill="url(#imp2Grad2)" />
+
+                        <!-- Dark Accent Lines for White Paper -->
+                        <path d="M150 150 L200 200" stroke="#0f172a" stroke-width="2" />
+                        <path d="M330 250 L380 200" stroke="#0f172a" stroke-width="2" />
+                    </svg>
+                </div>
+            </div>
+            <h2>Option 74: The Impossible GSI</h2>
+            <p>Expanding the visual paradox of Option 38 to the full GSI acronym. Smart, structural, and intellectual.
+            </p>
+        </div>
+
+        <!-- Concept 75: The Quantum Loop -->
+        <div class="concept-card">
+            <div class="check-container">
+                <div class="logo-box dark">
+                    <span class="label">Dark BG</span>
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="quantGrad" x1="0" y1="0" x2="500" y2="500">
+                                <stop offset="0%" stop-color="#22d3ee" />
+                                <stop offset="100%" stop-color="#3b82f6" />
+                            </linearGradient>
+                        </defs>
+                        <!-- Smooth continuous loop -->
+                        <path
+                            d="M150 200 C50 200 50 400 150 400 C200 400 250 300 300 200 C350 100 450 100 450 200 C450 300 350 400 300 400"
+                            stroke="url(#quantGrad)" stroke-width="30" stroke-linecap="round" fill="none" />
+                        <!-- Accents to break it into letters -->
+                        <!-- G crossbar -->
+                        <path d="M130 300 H180" stroke="#0a0f1c" stroke-width="15" stroke-linecap="round" />
+                        <!-- I vertical -->
+                        <path d="M400 300 V350" stroke="url(#quantGrad)" stroke-width="30" stroke-linecap="round" />
+                    </svg>
+                </div>
+                <div class="logo-box light">
+                    <span class="label">White BG</span>
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="quantGrad2" x1="0" y1="0" x2="500" y2="500">
+                                <stop offset="0%" stop-color="#22d3ee" />
+                                <stop offset="100%" stop-color="#3b82f6" />
+                            </linearGradient>
+                        </defs>
+                        <path
+                            d="M150 200 C50 200 50 400 150 400 C200 400 250 300 300 200 C350 100 450 100 450 200 C450 300 350 400 300 400"
+                            stroke="url(#quantGrad2)" stroke-width="30" stroke-linecap="round" fill="none" />
+                        <!-- G crossbar - Dark for white paper -->
+                        <path d="M130 300 H180" stroke="white" stroke-width="15" stroke-linecap="round" />
+                        <!-- I vertical -->
+                        <path d="M400 300 V350" stroke="url(#quantGrad2)" stroke-width="30" stroke-linecap="round" />
+                    </svg>
+                </div>
+            </div>
+            <h2>Option 75: The Quantum Loop</h2>
+            <p>A smoother, organic version of the "Continuous Path". It feels like liquid chrome or fiber optics
+                endlessly flowing.</p>
+        </div>
+
+        <!-- Concept 76: The Data Stack -->
+        <div class="concept-card">
+            <div class="check-container">
+                <div class="logo-box dark">
+                    <span class="label">Dark BG</span>
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="dataGrad" x1="0" y1="0" x2="500" y2="500">
+                                <stop offset="0%" stop-color="#fff" />
+                                <stop offset="100%" stop-color="#94a3b8" />
+                            </linearGradient>
+                        </defs>
+                        <!-- Horizontal Slices -->
+                        <g fill="url(#dataGrad)">
+                            <!-- G -->
+                            <rect x="100" y="150" width="100" height="20" rx="5" />
+                            <rect x="100" y="190" width="30" height="20" rx="5" />
+                            <rect x="100" y="230" width="30" height="20" rx="5" />
+                            <rect x="100" y="270" width="100" height="20" rx="5" />
+                            <rect x="170" y="230" width="30" height="20" rx="5" />
+
+                            <!-- S -->
+                            <rect x="230" y="150" width="80" height="20" rx="5" />
+                            <rect x="230" y="190" width="30" height="20" rx="5" />
+                            <rect x="230" y="230" width="80" height="20" rx="5" />
+                            <rect x="280" y="270" width="30" height="20" rx="5" />
+                            <rect x="230" y="310" width="80" height="20" rx="5" />
+
+                            <!-- I -->
+                            <rect x="340" y="150" width="30" height="180" rx="5" />
+                        </g>
+
+                        <!-- Horizon Beam -->
+                        <rect x="80" y="350" width="340" height="5" fill="#3b82f6" />
+                    </svg>
+                </div>
+                <div class="logo-box light">
+                    <span class="label">White BG</span>
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="dataGrad2" x1="0" y1="0" x2="500" y2="500">
+                                <stop offset="0%" stop-color="#1e293b" />
+                                <stop offset="100%" stop-color="#475569" />
+                            </linearGradient>
+                        </defs>
+                        <!-- Horizontal Slices - Dark for white paper -->
+                        <g fill="url(#dataGrad2)">
+                            <rect x="100" y="150" width="100" height="20" rx="5" />
+                            <rect x="100" y="190" width="30" height="20" rx="5" />
+                            <rect x="100" y="230" width="30" height="20" rx="5" />
+                            <rect x="100" y="270" width="100" height="20" rx="5" />
+                            <rect x="170" y="230" width="30" height="20" rx="5" />
+
+                            <rect x="230" y="150" width="80" height="20" rx="5" />
+                            <rect x="230" y="190" width="30" height="20" rx="5" />
+                            <rect x="230" y="230" width="80" height="20" rx="5" />
+                            <rect x="280" y="270" width="30" height="20" rx="5" />
+                            <rect x="230" y="310" width="80" height="20" rx="5" />
+
+                            <rect x="340" y="150" width="30" height="180" rx="5" />
+                        </g>
+                        <!-- Horizon Beam -->
+                        <rect x="80" y="350" width="340" height="5" fill="#3b82f6" />
+                    </svg>
+                </div>
+            </div>
+            <h2>Option 76: The Data Stack</h2>
+            <p>The letters built from horizontal "scan lines". Represents data processing, high speed, and digital
+                scanning. Modern and tech-heavy.</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSI Corp Logo Concepts - Round 33 (Strategic)</title>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #0a0f1c;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 2rem;
+        }
+
+        h1 {
+            margin-bottom: 0.5rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            margin-bottom: 3rem;
+            color: #f59e0b;
+            /* Amber for Idea/Spark */
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .concepts-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            max-width: 1400px;
+            width: 100%;
+        }
+
+        .concept-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 1rem;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .concept-card:hover {
+            transform: translateY(-5px);
+            border-color: #f59e0b;
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .check-container {
+            width: 100%;
+            display: flex;
+            gap: 10px;
+            margin-bottom: 1.5rem;
+        }
+
+        .logo-box {
+            flex: 1;
+            aspect-ratio: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .logo-box.dark {
+            background: #05080f;
+            border: 1px solid #1f2937;
+        }
+
+        .logo-box.light {
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+        }
+
+        .logo-box svg {
+            width: 80%;
+            height: 80%;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            color: #e5e7eb;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            font-size: 0.9rem;
+            color: #9ca3af;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>LOGO CONCEPTS - ROUND 33</h1>
+    <span class="subtitle">Strategic Relevance ("Get Some Idea")</span>
+
+    <div class="concepts-container">
+
+        <!-- Concept 112: The Idea Filament -->
+        <div class="concept-card">
+            <div class="check-container">
+                <div class="logo-box dark">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="ideaGrad" x1="0" y1="0" x2="500" y2="500">
+                                <stop offset="0%" stop-color="#fbbf24" /> <!-- Warm Gold -->
+                                <stop offset="100%" stop-color="#f59e0b" /> <!-- Amber -->
+                            </linearGradient>
+                            <filter id="glow">
+                                <feGaussianBlur stdDeviation="5" result="coloredBlur" />
+                                <feMerge>
+                                    <feMergeNode in="coloredBlur" />
+                                    <feMergeNode in="SourceGraphic" />
+                                </feMerge>
+                            </filter>
+                        </defs>
+                        <!-- A continuous "Filament" wire forming GSI inside a bulb outline -->
+                        <!-- The Bulb Outline (Subtle) -->
+                        <path
+                            d="M150 200 C150 100 350 100 350 200 C350 280 280 320 280 360 H220 C220 320 150 280 150 200"
+                            stroke="white" stroke-width="2" opacity="0.3" stroke-dasharray="10 10" />
+
+                        <!-- The GSI Filament (Glowing) -->
+                        <path d="M180 200 C160 200 160 240 180 240 H200" stroke="url(#ideaGrad)" stroke-width="15"
+                            stroke-linecap="round" fill="none" filter="url(#glow)" />
+                        <path d="M220 200 C240 200 240 240 220 240 C200 240 200 280 220 280 H280"
+                            stroke="url(#ideaGrad)" stroke-width="15" stroke-linecap="round" fill="none"
+                            filter="url(#glow)" />
+                        <path d="M300 200 V280" stroke="url(#ideaGrad)" stroke-width="15" stroke-linecap="round"
+                            filter="url(#glow)" />
+
+                        <!-- Base of bulb -->
+                        <path d="M220 380 H280" stroke="white" stroke-width="4" opacity="0.3" />
+                        <path d="M230 390 H270" stroke="white" stroke-width="4" opacity="0.3" />
+                    </svg>
+                </div>
+                <div class="logo-box light">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="ideaGrad2" x1="0" y1="0" x2="500" y2="500">
+                                <stop offset="0%" stop-color="#f59e0b" />
+                                <stop offset="100%" stop-color="#d97706" />
+                            </linearGradient>
+                        </defs>
+                        <!-- The Bulb Outline -->
+                        <path
+                            d="M150 200 C150 100 350 100 350 200 C350 280 280 320 280 360 H220 C220 320 150 280 150 200"
+                            stroke="#0f172a" stroke-width="2" opacity="0.3" stroke-dasharray="10 10" />
+
+                        <!-- The GSI Filament -->
+                        <path d="M180 200 C160 200 160 240 180 240 H200" stroke="url(#ideaGrad2)" stroke-width="15"
+                            stroke-linecap="round" fill="none" />
+                        <path d="M220 200 C240 200 240 240 220 240 C200 240 200 280 220 280 H280"
+                            stroke="url(#ideaGrad2)" stroke-width="15" stroke-linecap="round" fill="none" />
+                        <path d="M300 200 V280" stroke="url(#ideaGrad2)" stroke-width="15" stroke-linecap="round" />
+
+                        <!-- Base of bulb -->
+                        <path d="M220 380 H280" stroke="#0f172a" stroke-width="4" opacity="0.3" />
+                        <path d="M230 390 H270" stroke="#0f172a" stroke-width="4" opacity="0.3" />
+                    </svg>
+                </div>
+            </div>
+            <h2>Option 112: The Idea Filament</h2>
+            <p><strong>The Strategy:</strong> Directly referencing "Get Some **Idea**". The letters form the glowing
+                filament of an innovative spark. Warm, inviting, and literally brilliant.</p>
+        </div>
+
+        <!-- Concept 113: The Impossible Architect -->
+        <div class="concept-card">
+            <div class="check-container">
+                <div class="logo-box dark">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="archGrad" x1="0" y1="0" x2="500" y2="500">
+                                <stop offset="0%" stop-color="#3b82f6" />
+                                <stop offset="100%" stop-color="#8b5cf6" />
+                            </linearGradient>
+                        </defs>
+                        <!-- A structural block that forms GSI -->
+                        <g transform="translate(50, 50) scale(0.8)">
+                            <!-- Top Bar (G Top) -->
+                            <path d="M50 100 L150 50 L350 50 L450 100 V150 L350 200 H150 L50 150 Z"
+                                fill="url(#archGrad)" opacity="1.0" />
+                            <!-- Left Pillar (G Vert) -->
+                            <path d="M50 150 V350 L150 400 V200 L50 150" fill="url(#archGrad)" opacity="0.8" />
+                            <!-- Bottom Bar (G Bottom / S Bottom) -->
+                            <path d="M150 400 L250 450 L450 350 V300 L250 400 L150 300" fill="url(#archGrad)"
+                                opacity="0.9" />
+
+                            <!-- The Middle Impossible Cross (S/I) -->
+                            <path d="M450 350 V100" stroke="white" stroke-width="10" stroke-linecap="round"
+                                stroke-dasharray="20 20" opacity="0.5" /> <!-- Just implied structure -->
+
+                            <!-- Cutouts defining G S I -->
+                            <text x="250" y="300" font-family="Inter, sans-serif" font-weight="900" font-size="150"
+                                fill="white" text-anchor="middle">GSI</text>
+                        </g>
+                    </svg>
+                </div>
+                <div class="logo-box light">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="archGrad2" x1="0" y1="0" x2="500" y2="500">
+                                <stop offset="0%" stop-color="#3b82f6" />
+                                <stop offset="100%" stop-color="#8b5cf6" />
+                            </linearGradient>
+                        </defs>
+                        <g transform="translate(50, 50) scale(0.8)">
+                            <path d="M50 100 L150 50 L350 50 L450 100 V150 L350 200 H150 L50 150 Z"
+                                fill="url(#archGrad2)" opacity="1.0" />
+                            <path d="M50 150 V350 L150 400 V200 L50 150" fill="url(#archGrad2)" opacity="0.8" />
+                            <path d="M150 400 L250 450 L450 350 V300 L250 400 L150 300" fill="url(#archGrad2)"
+                                opacity="0.9" />
+
+                            <text x="250" y="300" font-family="Inter, sans-serif" font-weight="900" font-size="150"
+                                fill="#0f172a" text-anchor="middle">GSI</text>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <h2>Option 113: The Impossible Architect</h2>
+            <p><strong>The Strategy:</strong> "Get Some Idea" = Solving the Impossible. A monolithic, impossible
+                structure with the GSI carved out. Represents solid engineering and complex problem solving.</p>
+        </div>
+
+        <!-- Concept 114: The Neural Source -->
+        <div class="concept-card">
+            <div class="check-container">
+                <div class="logo-box dark">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="srcGrad" x1="0" y1="0" x2="500" y2="500">
+                                <stop offset="0%" stop-color="#ec4899" />
+                                <stop offset="100%" stop-color="#3b82f6" />
+                            </linearGradient>
+                        </defs>
+                        <!-- A central "Brain/Chip" core connecting GSI -->
+                        <g transform="translate(100,100) scale(0.6)">
+                            <circle cx="250" cy="250" r="150" fill="none" stroke="url(#srcGrad)" stroke-width="20"
+                                stroke-dasharray="20 40" />
+                            <circle cx="250" cy="250" r="100" fill="url(#srcGrad)" opacity="0.2" />
+
+                            <!-- Synapses radiating -->
+                            <path d="M250 250 L50 50" stroke="url(#srcGrad)" stroke-width="10" stroke-linecap="round" />
+                            <path d="M250 250 L450 50" stroke="url(#srcGrad)" stroke-width="10"
+                                stroke-linecap="round" />
+                            <path d="M250 250 L250 450" stroke="url(#srcGrad)" stroke-width="10"
+                                stroke-linecap="round" />
+
+                            <!-- Central Node -->
+                            <circle cx="250" cy="250" r="40" fill="white" />
+                        </g>
+                        <!-- Letters outside -->
+                        <text x="70" y="420" font-family="Inter, sans-serif" font-weight="bold" font-size="100"
+                            fill="white">G</text>
+                        <text x="430" y="420" font-family="Inter, sans-serif" font-weight="bold" font-size="100"
+                            fill="white">I</text>
+                        <text x="250" y="80" font-family="Inter, sans-serif" font-weight="bold" font-size="100"
+                            fill="white" text-anchor="middle">S</text>
+                    </svg>
+                </div>
+                <div class="logo-box light">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="srcGrad2" x1="0" y1="0" x2="500" y2="500">
+                                <stop offset="0%" stop-color="#ec4899" />
+                                <stop offset="100%" stop-color="#3b82f6" />
+                            </linearGradient>
+                        </defs>
+                        <g transform="translate(100,100) scale(0.6)">
+                            <circle cx="250" cy="250" r="150" fill="none" stroke="url(#srcGrad2)" stroke-width="20"
+                                stroke-dasharray="20 40" />
+                            <circle cx="250" cy="250" r="100" fill="url(#srcGrad2)" opacity="0.2" />
+
+                            <path d="M250 250 L50 50" stroke="url(#srcGrad2)" stroke-width="10"
+                                stroke-linecap="round" />
+                            <path d="M250 250 L450 50" stroke="url(#srcGrad2)" stroke-width="10"
+                                stroke-linecap="round" />
+                            <path d="M250 250 L250 450" stroke="url(#srcGrad2)" stroke-width="10"
+                                stroke-linecap="round" />
+
+                            <circle cx="250" cy="250" r="40" fill="#0f172a" />
+                        </g>
+                        <text x="70" y="420" font-family="Inter, sans-serif" font-weight="bold" font-size="100"
+                            fill="#0f172a">G</text>
+                        <text x="430" y="420" font-family="Inter, sans-serif" font-weight="bold" font-size="100"
+                            fill="#0f172a">I</text>
+                        <text x="250" y="80" font-family="Inter, sans-serif" font-weight="bold" font-size="100"
+                            fill="#0f172a" text-anchor="middle">S</text>
+                    </svg>
+                </div>
+            </div>
+            <h2>Option 114: The Neural Source</h2>
+            <p><strong>The Strategy:</strong> "Get Some Idea" = The Source of Intelligence. A central AI core (Source)
+                distributing data to G, S, and I. Represents a connected, smart ecosystem.</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

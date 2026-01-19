@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSI Corp Logo Concepts - Round 41</title>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #0a0f1c;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 2rem;
+        }
+
+        h1 {
+            margin-bottom: 0.5rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            margin-bottom: 3rem;
+            color: #f59e0b;
+            /* Amber for Structure */
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .concepts-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            max-width: 1400px;
+            width: 100%;
+        }
+
+        .concept-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 1rem;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .concept-card:hover {
+            transform: translateY(-5px);
+            border-color: #f59e0b;
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .check-container {
+            width: 100%;
+            display: flex;
+            gap: 10px;
+            margin-bottom: 1.5rem;
+        }
+
+        .logo-box {
+            flex: 1;
+            aspect-ratio: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .logo-box.dark {
+            background: #05080f;
+            border: 1px solid #1f2937;
+        }
+
+        .logo-box.light {
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+        }
+
+        .logo-box svg {
+            width: 80%;
+            height: 80%;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            color: #e5e7eb;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            font-size: 0.9rem;
+            color: #9ca3af;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>LOGO CONCEPTS - ROUND 41</h1>
+    <span class="subtitle">User Directed: The Roof & Floor Stacking</span>
+
+    <div class="concepts-container">
+
+        <!-- Concept 136: The Overhead G -->
+        <div class="concept-card">
+            <div class="check-container">
+                <div class="logo-box dark">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="roofGrad" x1="0" y1="0" x2="500" y2="0">
+                                <stop offset="0%" stop-color="#3b82f6" />
+                                <stop offset="100%" stop-color="#0ea5e9" />
+                            </linearGradient>
+                        </defs>
+                        <!-- G: Forms the roof and left wall -->
+                        <!-- Start top right (450,100), go left to (50,100), down to (50,400), right to (150,400), up to (150,250), right to (200,250) -->
+                        <path d="M480 120 H100 C70 120 50 140 50 170 V380 C50 410 70 430 100 430 H180"
+                            stroke="url(#roofGrad)" stroke-width="40" stroke-linecap="round" fill="none" />
+                        <!-- G crossbar -->
+                        <path d="M50 280 H150" stroke="url(#roofGrad)" stroke-width="40" stroke-linecap="round" />
+
+                        <!-- S: Tucked under the G extension (Right side, lower) -->
+                        <!-- S Bottom extension goes LEFT back towards G -->
+                        <path
+                            d="M450 250 H350 C330 250 320 270 320 290 C320 310 330 330 350 330 H380 C400 330 410 350 410 370 C410 390 400 410 380 410 H220"
+                            stroke="white" stroke-width="30" stroke-linecap="round" fill="none" />
+
+                        <!-- I: Tucked under G extension, far right -->
+                        <path d="M450 180 V410" stroke="#f59e0b" stroke-width="30" stroke-linecap="round" />
+
+                    </svg>
+                </div>
+                <div class="logo-box light">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="roofGrad2" x1="0" y1="0" x2="500" y2="0">
+                                <stop offset="0%" stop-color="#3b82f6" />
+                                <stop offset="100%" stop-color="#0ea5e9" />
+                            </linearGradient>
+                        </defs>
+                        <!-- G -->
+                        <path d="M480 120 H100 C70 120 50 140 50 170 V380 C50 410 70 430 100 430 H180"
+                            stroke="url(#roofGrad2)" stroke-width="40" stroke-linecap="round" fill="none" />
+                        <path d="M50 280 H150" stroke="url(#roofGrad2)" stroke-width="40" stroke-linecap="round" />
+
+                        <!-- S - Dark -->
+                        <path
+                            d="M450 250 H350 C330 250 320 270 320 290 C320 310 330 330 350 330 H380 C400 330 410 350 410 370 C410 390 400 410 380 410 H220"
+                            stroke="#0f172a" stroke-width="30" stroke-linecap="round" fill="none" />
+
+                        <!-- I -->
+                        <path d="M450 180 V410" stroke="#f59e0b" stroke-width="30" stroke-linecap="round" />
+                    </svg>
+                </div>
+            </div>
+            <h2>Option 136: The Overhead G</h2>
+            <p><strong>Layout:</strong> Shelter. The G creates a massive canopy. 'S' and 'I' live underneath it. 'S'
+                extends its tail back to the left, interlocking with the G structure.</p>
+        </div>
+
+        <!-- Concept 137: The Tiered Lock -->
+        <div class="concept-card">
+            <div class="check-container">
+                <div class="logo-box dark">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="tierGrad" x1="0" y1="0" x2="500" y2="500">
+                                <stop offset="0%" stop-color="#8b5cf6" />
+                                <stop offset="100%" stop-color="#ec4899" />
+                            </linearGradient>
+                        </defs>
+                        <!-- G: Top half of the canvas -->
+                        <path d="M50 250 V100 H450" stroke="url(#tierGrad)" stroke-width="50" fill="none" />
+                        <!-- Top L -->
+                        <path d="M50 200 H200" stroke="url(#tierGrad)" stroke-width="50" /> <!-- Crossbar -->
+
+                        <!-- S & I: Bottom half, nestled -->
+                        <!-- S long bottom tail going left -->
+                        <path d="M350 300 H250 C220 300 220 350 250 350 H280 C310 350 310 400 280 400 H50"
+                            stroke="white" stroke-width="40" stroke-linecap="round" fill="none" />
+
+                        <!-- I standing guard -->
+                        <path d="M400 150 V400" stroke="#f59e0b" stroke-width="40" stroke-linecap="round" />
+                    </svg>
+                </div>
+                <div class="logo-box light">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="tierGrad2" x1="0" y1="0" x2="500" y2="500">
+                                <stop offset="0%" stop-color="#8b5cf6" />
+                                <stop offset="100%" stop-color="#ec4899" />
+                            </linearGradient>
+                        </defs>
+                        <!-- G -->
+                        <path d="M50 250 V100 H450" stroke="url(#tierGrad2)" stroke-width="50" fill="none" />
+                        <path d="M50 200 H200" stroke="url(#tierGrad2)" stroke-width="50" />
+
+                        <!-- S - Dark -->
+                        <path d="M350 300 H250 C220 300 220 350 250 350 H280 C310 350 310 400 280 400 H50"
+                            stroke="#0f172a" stroke-width="40" stroke-linecap="round" fill="none" />
+
+                        <!-- I -->
+                        <path d="M400 150 V400" stroke="#f59e0b" stroke-width="40" stroke-linecap="round" />
+                    </svg>
+                </div>
+            </div>
+            <h2>Option 137: The Tiered Lock</h2>
+            <p><strong>Layout:</strong> Vertical Hierarchy. G dominates the upper stratum. S sweeps across the lower
+                stratum. I connects them vertically.</p>
+        </div>
+
+        <!-- Concept 138: The Protective Frame -->
+        <div class="concept-card">
+            <div class="check-container">
+                <div class="logo-box dark">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="protGrad" x1="0" y1="0" x2="500" y2="0">
+                                <stop offset="0%" stop-color="#f43f5e" />
+                                <stop offset="100%" stop-color="#f59e0b" />
+                            </linearGradient>
+                        </defs>
+                        <!-- G: Square and sturdy, creates the Roof -->
+                        <path d="M450 80 H80 V420 H200" stroke="url(#protGrad)" stroke-width="40" fill="none"
+                            stroke-linecap="square" />
+                        <path d="M80 250 H200" stroke="url(#protGrad)" stroke-width="40" /> <!-- G Mid -->
+
+                        <!-- S placed inside/below -->
+                        <text x="320" y="300" font-family="Inter, sans-serif" font-weight="900" font-size="150"
+                            fill="white" text-anchor="middle">S</text>
+                        <!-- S extension line going left under G's mid-bar -->
+                        <path d="M280 320 H180" stroke="white" stroke-width="20" stroke-linecap="round" />
+
+                        <!-- I placed inside/below -->
+                        <text x="400" y="300" font-family="Inter, sans-serif" font-weight="900" font-size="150"
+                            fill="white" text-anchor="middle">I</text>
+
+                    </svg>
+                </div>
+                <div class="logo-box light">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="protGrad2" x1="0" y1="0" x2="500" y2="0">
+                                <stop offset="0%" stop-color="#f43f5e" />
+                                <stop offset="100%" stop-color="#f59e0b" />
+                            </linearGradient>
+                        </defs>
+                        <!-- G -->
+                        <path d="M450 80 H80 V420 H200" stroke="url(#protGrad2)" stroke-width="40" fill="none"
+                            stroke-linecap="square" />
+                        <path d="M80 250 H200" stroke="url(#protGrad2)" stroke-width="40" />
+
+                        <!-- S - Dark -->
+                        <text x="320" y="300" font-family="Inter, sans-serif" font-weight="900" font-size="150"
+                            fill="#0f172a" text-anchor="middle">S</text>
+                        <path d="M280 320 H180" stroke="#0f172a" stroke-width="20" stroke-linecap="round" />
+
+                        <!-- I - Dark -->
+                        <text x="400" y="300" font-family="Inter, sans-serif" font-weight="900" font-size="150"
+                            fill="#0f172a" text-anchor="middle">I</text>
+                    </svg>
+                </div>
+            </div>
+            <h2>Option 138: The Protective Frame</h2>
+            <p><strong>Layout:</strong> Enclosure. The G is an outer box frame. S and I are "protected assets" residing
+                within the open space of the G.</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

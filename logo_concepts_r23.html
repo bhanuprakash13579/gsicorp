@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSI Corp Logo Concepts - Round 23</title>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #0a0f1c;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 2rem;
+        }
+
+        h1 {
+            margin-bottom: 0.5rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            margin-bottom: 3rem;
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+
+        .concepts-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            max-width: 1400px;
+            width: 100%;
+        }
+
+        .concept-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 1rem;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .concept-card:hover {
+            transform: translateY(-5px);
+            border-color: #3b82f6;
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .check-container {
+            width: 100%;
+            display: flex;
+            gap: 10px;
+            margin-bottom: 1.5rem;
+        }
+
+        .logo-box {
+            flex: 1;
+            aspect-ratio: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .logo-box.dark {
+            background: #05080f;
+            border: 1px solid #1f2937;
+        }
+
+        .logo-box.light {
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+        }
+
+        .logo-box svg {
+            width: 80%;
+            height: 80%;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            color: #9ca3af;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            font-size: 0.9rem;
+            color: #6b7280;
+            line-height: 1.5;
+        }
+
+        .label {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            font-size: 0.7rem;
+            opacity: 0.5;
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>LOGO CONCEPTS - ROUND 23</h1>
+    <span class="subtitle">Artistic Fusion (Custom Monograms)</span>
+
+    <div class="concepts-container">
+
+        <!-- Concept 65: The Trinity Knot -->
+        <div class="concept-card">
+            <div class="check-container">
+                <div class="logo-box dark">
+                    <span class="label">Dark BG</span>
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="knotGrad" x1="0" y1="0" x2="500" y2="500">
+                                <stop offset="0%" stop-color="#3b82f6" />
+                                <stop offset="100%" stop-color="#22d3ee" />
+                            </linearGradient>
+                        </defs>
+                        <!-- A custom shape where G, S, I interlock in a triangle -->
+                        <!-- G arc -->
+                        <path d="M250 100 C150 100 100 200 150 300" stroke="url(#knotGrad)" stroke-width="40"
+                            stroke-linecap="round" fill="none" />
+                        <!-- S curve -->
+                        <path d="M150 300 C200 400 300 400 350 300 C400 200 300 100 250 100" stroke="url(#knotGrad)"
+                            stroke-width="40" stroke-linecap="round" fill="none" />
+                        <!-- I bar cutting through -->
+                        <path d="M250 200 V400" stroke="url(#knotGrad)" stroke-width="40" stroke-linecap="round" />
+                        <!-- White Accent dots -->
+                        <circle cx="250" cy="100" r="15" fill="white" />
+                        <circle cx="150" cy="300" r="15" fill="white" />
+                        <circle cx="350" cy="300" r="15" fill="white" />
+                    </svg>
+                </div>
+                <div class="logo-box light">
+                    <span class="label">White BG</span>
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="knotGrad2" x1="0" y1="0" x2="500" y2="500">
+                                <stop offset="0%" stop-color="#3b82f6" />
+                                <stop offset="100%" stop-color="#22d3ee" />
+                            </linearGradient>
+                        </defs>
+                        <path d="M250 100 C150 100 100 200 150 300" stroke="url(#knotGrad2)" stroke-width="40"
+                            stroke-linecap="round" fill="none" />
+                        <path d="M150 300 C200 400 300 400 350 300 C400 200 300 100 250 100" stroke="url(#knotGrad2)"
+                            stroke-width="40" stroke-linecap="round" fill="none" />
+                        <path d="M250 200 V400" stroke="url(#knotGrad2)" stroke-width="40" stroke-linecap="round" />
+                        <circle cx="250" cy="100" r="15" fill="#0f172a" />
+                        <circle cx="150" cy="300" r="15" fill="#0f172a" />
+                        <circle cx="350" cy="300" r="15" fill="#0f172a" />
+                    </svg>
+                </div>
+            </div>
+            <h2>Option 65: The Trinity Knot</h2>
+            <p>A flowing custom geometry where G, S, and I are woven into a single tech-knot. No standard text—pure
+                custom design.</p>
+        </div>
+
+        <!-- Concept 66: The GSI Pillar -->
+        <div class="concept-card">
+            <div class="check-container">
+                <div class="logo-box dark">
+                    <span class="label">Dark BG</span>
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="pillarGrad" x1="0" y1="0" x2="500" y2="500">
+                                <stop offset="0%" stop-color="#8b5cf6" />
+                                <stop offset="100%" stop-color="#6366f1" />
+                            </linearGradient>
+                        </defs>
+                        <!-- Stacked Abstract Shapes -->
+                        <!-- Top (G) -->
+                        <path d="M150 150 H350 V200 H200 V180 H320" stroke="url(#pillarGrad)" stroke-width="0"
+                            fill="url(#pillarGrad)" />
+                        <path d="M350 150 C380 150 380 200 350 200 H200 C170 200 170 150 200 150"
+                            fill="url(#pillarGrad)" />
+
+                        <!-- Middle (S) -->
+                        <path d="M200 230 H300 L200 280 H300" stroke="url(#pillarGrad)" stroke-width="40"
+                            stroke-linecap="round" stroke-linejoin="round" fill="none" />
+
+                        <!-- Bottom (I) -->
+                        <rect x="230" y="320" width="40" height="80" rx="10" fill="url(#pillarGrad)" />
+
+                        <!-- Unifying Circle Frame -->
+                        <circle cx="250" cy="250" r="230" stroke="white" stroke-width="5" stroke-dasharray="10 20"
+                            opacity="0.5" />
+                    </svg>
+                </div>
+                <div class="logo-box light">
+                    <span class="label">White BG</span>
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="pillarGrad2" x1="0" y1="0" x2="500" y2="500">
+                                <stop offset="0%" stop-color="#8b5cf6" />
+                                <stop offset="100%" stop-color="#6366f1" />
+                            </linearGradient>
+                        </defs>
+                        <!-- Stacked Abstract Shapes -->
+                        <!-- Top (G) -->
+                        <path d="M150 150 H350 V200 H200 V180 H320" stroke="url(#pillarGrad2)" stroke-width="0"
+                            fill="url(#pillarGrad2)" />
+                        <path d="M350 150 C380 150 380 200 350 200 H200 C170 200 170 150 200 150"
+                            fill="url(#pillarGrad2)" />
+
+                        <!-- Middle (S) -->
+                        <path d="M200 230 H300 L200 280 H300" stroke="url(#pillarGrad2)" stroke-width="40"
+                            stroke-linecap="round" stroke-linejoin="round" fill="none" />
+
+                        <!-- Bottom (I) -->
+                        <rect x="230" y="320" width="40" height="80" rx="10" fill="url(#pillarGrad2)" />
+
+                        <!-- Unifying Circle Frame -->
+                        <circle cx="250" cy="250" r="230" stroke="#0f172a" stroke-width="5" stroke-dasharray="10 20"
+                            opacity="0.5" />
+                    </svg>
+                </div>
+            </div>
+            <h2>Option 66: The GSI Pillar</h2>
+            <p>The letters abstractly stacked to form a totem or pillar. Symbolizes stability and foundational strength.
+            </p>
+        </div>
+
+        <!-- Concept 67: The Cyber Path -->
+        <div class="concept-card">
+            <div class="check-container">
+                <div class="logo-box dark">
+                    <span class="label">Dark BG</span>
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="cyberGrad" x1="0" y1="0" x2="500" y2="500">
+                                <stop offset="0%" stop-color="#ea580c" />
+                                <stop offset="100%" stop-color="#dc2626" />
+                            </linearGradient>
+                        </defs>
+                        <!-- A single continuous stroke forming G into S into I -->
+                        <path d="M350 150 H150 V300 H350 V220 H250" stroke="url(#cyberGrad)" stroke-width="40"
+                            stroke-linecap="square" fill="none" />
+                        <circle cx="250" cy="220" r="15" fill="white" />
+                        <rect x="400" y="150" width="40" height="150" fill="url(#cyberGrad)" />
+                    </svg>
+                </div>
+                <div class="logo-box light">
+                    <span class="label">White BG</span>
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="cyberGrad2" x1="0" y1="0" x2="500" y2="500">
+                                <stop offset="0%" stop-color="#ea580c" />
+                                <stop offset="100%" stop-color="#dc2626" />
+                            </linearGradient>
+                        </defs>
+                        <!-- A single continuous stroke forming G into S into I -->
+                        <path d="M350 150 H150 V300 H350 V220 H250" stroke="url(#cyberGrad2)" stroke-width="40"
+                            stroke-linecap="square" fill="none" />
+                        <circle cx="250" cy="220" r="15" fill="#0f172a" />
+                        <rect x="400" y="150" width="40" height="150" fill="url(#cyberGrad2)" />
+                    </svg>
+                </div>
+            </div>
+            <h2>Option 67: The Cyber Path</h2>
+            <p>A "Maze-like" path where the negative space and stroke create the G-S-I structure. High tech, precise,
+                and engineered.</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

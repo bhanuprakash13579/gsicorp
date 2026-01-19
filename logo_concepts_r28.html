@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSI Corp Logo Concepts - Round 28</title>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #0a0f1c;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 2rem;
+        }
+
+        h1 {
+            margin-bottom: 0.5rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            margin-bottom: 3rem;
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+
+        .concepts-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            max-width: 1400px;
+            width: 100%;
+        }
+
+        .concept-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 1rem;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .concept-card:hover {
+            transform: translateY(-5px);
+            border-color: #3b82f6;
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .check-container {
+            width: 100%;
+            display: flex;
+            gap: 10px;
+            margin-bottom: 1.5rem;
+        }
+
+        .logo-box {
+            flex: 1;
+            aspect-ratio: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .logo-box.dark {
+            background: #05080f;
+            border: 1px solid #1f2937;
+        }
+
+        .logo-box.light {
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+        }
+
+        .logo-box svg {
+            width: 80%;
+            height: 80%;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            color: #9ca3af;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            font-size: 0.9rem;
+            color: #6b7280;
+            line-height: 1.5;
+        }
+
+        .label {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            font-size: 0.7rem;
+            opacity: 0.5;
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>LOGO CONCEPTS - ROUND 28</h1>
+    <span class="subtitle">Fluid Tech & Connected Paths</span>
+
+    <div class="concepts-container">
+
+        <!-- Concept 80: The Liquid Circuit -->
+        <div class="concept-card">
+            <div class="check-container">
+                <div class="logo-box dark">
+                    <span class="label">Dark BG</span>
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="liqGrad" x1="0" y1="0" x2="500" y2="500">
+                                <stop offset="0%" stop-color="#3b82f6" />
+                                <stop offset="100%" stop-color="#8b5cf6" />
+                            </linearGradient>
+                        </defs>
+                        <!-- Rounded, fluid lines -->
+                        <!-- G Loop -->
+                        <path d="M150 150 C100 150 100 250 150 250 H180 V200" stroke="url(#liqGrad)" stroke-width="30"
+                            stroke-linecap="round" fill="none" />
+                        <!-- S Curve connected -->
+                        <path d="M220 150 C260 150 260 200 220 200 C180 200 180 250 220 250" stroke="url(#liqGrad)"
+                            stroke-width="30" stroke-linecap="round" fill="none" />
+                        <!-- I Line connected -->
+                        <path d="M280 150 V250" stroke="url(#liqGrad)" stroke-width="30" stroke-linecap="round" />
+
+                        <!-- Nodes -->
+                        <circle cx="220" cy="250" r="15" fill="white" />
+                        <circle cx="280" cy="150" r="15" fill="white" />
+
+                        <!-- Centered in 500x500 box, moved for visual balance -->
+                        <g transform="translate(100, 100) scale(1.0)">
+                            <!-- Repeated for visual weight -->
+                        </g>
+                    </svg>
+                </div>
+                <div class="logo-box light">
+                    <span class="label">White BG</span>
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="liqGrad2" x1="0" y1="0" x2="500" y2="500">
+                                <stop offset="0%" stop-color="#3b82f6" />
+                                <stop offset="100%" stop-color="#8b5cf6" />
+                            </linearGradient>
+                        </defs>
+                        <!-- G Loop -->
+                        <path d="M150 150 C100 150 100 250 150 250 H180 V200" stroke="url(#liqGrad2)" stroke-width="30"
+                            stroke-linecap="round" fill="none" />
+                        <path d="M220 150 C260 150 260 200 220 200 C180 200 180 250 220 250" stroke="url(#liqGrad2)"
+                            stroke-width="30" stroke-linecap="round" fill="none" />
+                        <path d="M280 150 V250" stroke="url(#liqGrad2)" stroke-width="30" stroke-linecap="round" />
+
+                        <!-- Nodes - Dark for white paper -->
+                        <circle cx="220" cy="250" r="15" fill="#0f172a" />
+                        <circle cx="280" cy="150" r="15" fill="#0f172a" />
+                    </svg>
+                </div>
+            </div>
+            <h2>Option 80: The Liquid Circuit</h2>
+            <p>Smooth, rounded paths that flow like liquid data. Rounded terminals give a friendly yet high-tech feel.
+            </p>
+        </div>
+
+        <!-- Concept 81: The Speed Link -->
+        <div class="concept-card">
+            <div class="check-container">
+                <div class="logo-box dark">
+                    <span class="label">Dark BG</span>
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="spdGrad" x1="0" y1="0" x2="500" y2="500">
+                                <stop offset="0%" stop-color="#f59e0b" />
+                                <stop offset="100%" stop-color="#ea580c" />
+                            </linearGradient>
+                        </defs>
+                        <!-- Slanted, fast lines -->
+                        <g transform="skewX(-20) translate(100, 50)">
+                            <!-- G -->
+                            <path d="M50 100 H150 V300 H50 V200 H100" stroke="url(#spdGrad)" stroke-width="40"
+                                fill="none" stroke-linecap="square" />
+                            <!-- S -->
+                            <path d="M180 100 H280 V150 H180 V250 H280 V300 H180" stroke="url(#spdGrad)"
+                                stroke-width="40" fill="none" stroke-linecap="square" />
+                            <!-- I -->
+                            <path d="M310 100 V300" stroke="url(#spdGrad)" stroke-width="40" stroke-linecap="square" />
+                        </g>
+                        <!-- Motion trails -->
+                        <path d="M50 350 H300" stroke="white" stroke-width="5" opacity="0.5" />
+                        <path d="M100 370 H400" stroke="white" stroke-width="5" opacity="0.3" />
+                    </svg>
+                </div>
+                <div class="logo-box light">
+                    <span class="label">White BG</span>
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="spdGrad2" x1="0" y1="0" x2="500" y2="500">
+                                <stop offset="0%" stop-color="#f59e0b" />
+                                <stop offset="100%" stop-color="#ea580c" />
+                            </linearGradient>
+                        </defs>
+                        <g transform="skewX(-20) translate(100, 50)">
+                            <path d="M50 100 H150 V300 H50 V200 H100" stroke="url(#spdGrad2)" stroke-width="40"
+                                fill="none" stroke-linecap="square" />
+                            <path d="M180 100 H280 V150 H180 V250 H280 V300 H180" stroke="url(#spdGrad2)"
+                                stroke-width="40" fill="none" stroke-linecap="square" />
+                            <path d="M310 100 V300" stroke="url(#spdGrad2)" stroke-width="40" stroke-linecap="square" />
+                        </g>
+                        <path d="M50 350 H300" stroke="#0f172a" stroke-width="5" opacity="0.5" />
+                        <path d="M100 370 H400" stroke="#0f172a" stroke-width="5" opacity="0.3" />
+                    </svg>
+                </div>
+            </div>
+            <h2>Option 81: The Speed Link</h2>
+            <p>Italicized, blocky "automotive" style lettering. Represents speed, performance, and forward momentum.</p>
+        </div>
+
+        <!-- Concept 82: The Constellation GSI -->
+        <div class="concept-card">
+            <div class="check-container">
+                <div class="logo-box dark">
+                    <span class="label">Dark BG</span>
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="constGrad" x1="0" y1="0" x2="500" y2="500">
+                                <stop offset="0%" stop-color="#22d3ee" />
+                                <stop offset="100%" stop-color="#3b82f6" />
+                            </linearGradient>
+                        </defs>
+                        <!-- Nodes connecting lines -->
+                        <!-- G -->
+                        <path d="M150 150 L100 200 L100 300 L150 350 L200 300 L200 250 L150 250"
+                            stroke="url(#constGrad)" stroke-width="5" />
+                        <circle cx="150" cy="150" r="10" fill="white" />
+                        <circle cx="100" cy="200" r="10" fill="white" />
+                        <circle cx="100" cy="300" r="10" fill="white" />
+                        <circle cx="150" cy="350" r="10" fill="white" />
+                        <circle cx="200" cy="300" r="10" fill="white" />
+                        <circle cx="200" cy="250" r="10" fill="white" />
+                        <circle cx="150" cy="250" r="10" fill="white" />
+
+                        <!-- S -->
+                        <path d="M250 150 L300 150 L250 250 L300 350 L250 350" stroke="url(#constGrad)"
+                            stroke-width="5" />
+                        <circle cx="250" cy="150" r="10" fill="white" />
+                        <circle cx="300" cy="150" r="10" fill="white" />
+                        <circle cx="250" cy="250" r="10" fill="white" />
+                        <circle cx="300" cy="350" r="10" fill="white" />
+                        <circle cx="250" cy="350" r="10" fill="white" />
+
+                        <!-- I -->
+                        <path d="M350 150 L350 350" stroke="url(#constGrad)" stroke-width="5" />
+                        <circle cx="350" cy="150" r="10" fill="white" />
+                        <circle cx="350" cy="350" r="10" fill="white" />
+                    </svg>
+                </div>
+                <div class="logo-box light">
+                    <span class="label">White BG</span>
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="constGrad2" x1="0" y1="0" x2="500" y2="500">
+                                <stop offset="0%" stop-color="#22d3ee" />
+                                <stop offset="100%" stop-color="#3b82f6" />
+                            </linearGradient>
+                        </defs>
+                        <!-- G -->
+                        <path d="M150 150 L100 200 L100 300 L150 350 L200 300 L200 250 L150 250"
+                            stroke="url(#constGrad2)" stroke-width="5" />
+                        <circle cx="150" cy="150" r="10" fill="#0f172a" />
+                        <circle cx="100" cy="200" r="10" fill="#0f172a" />
+                        <circle cx="100" cy="300" r="10" fill="#0f172a" />
+                        <circle cx="150" cy="350" r="10" fill="#0f172a" />
+                        <circle cx="200" cy="300" r="10" fill="#0f172a" />
+                        <circle cx="200" cy="250" r="10" fill="#0f172a" />
+                        <circle cx="150" cy="250" r="10" fill="#0f172a" />
+
+                        <!-- S -->
+                        <path d="M250 150 L300 150 L250 250 L300 350 L250 350" stroke="url(#constGrad2)"
+                            stroke-width="5" />
+                        <circle cx="250" cy="150" r="10" fill="#0f172a" />
+                        <circle cx="300" cy="150" r="10" fill="#0f172a" />
+                        <circle cx="250" cy="250" r="10" fill="#0f172a" />
+                        <circle cx="300" cy="350" r="10" fill="#0f172a" />
+                        <circle cx="250" cy="350" r="10" fill="#0f172a" />
+
+                        <!-- I -->
+                        <path d="M350 150 L350 350" stroke="url(#constGrad2)" stroke-width="5" />
+                        <circle cx="350" cy="150" r="10" fill="#0f172a" />
+                        <circle cx="350" cy="350" r="10" fill="#0f172a" />
+                    </svg>
+                </div>
+            </div>
+            <h2>Option 82: The Constellation GSI</h2>
+            <p>Thin tech lines connecting 'star' nodes. It looks like a schematic or a constellation. Very delicate and
+                scientific.</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

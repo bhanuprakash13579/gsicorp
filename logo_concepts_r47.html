@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSI Corp Logo Concepts - Round 47</title>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #0a0f1c;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 2rem;
+        }
+
+        h1 {
+            margin-bottom: 0.5rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            margin-bottom: 3rem;
+            color: #f59e0b;
+            /* Amber for Refinement */
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .concepts-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            max-width: 1400px;
+            width: 100%;
+        }
+
+        .concept-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 1rem;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .concept-card:hover {
+            transform: translateY(-5px);
+            border-color: #f59e0b;
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .check-container {
+            width: 100%;
+            display: flex;
+            gap: 10px;
+            margin-bottom: 1.5rem;
+        }
+
+        .logo-box {
+            flex: 1;
+            aspect-ratio: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .logo-box.dark {
+            background: #05080f;
+            border: 1px solid #1f2937;
+        }
+
+        .logo-box.light {
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+        }
+
+        .logo-box svg {
+            width: 80%;
+            height: 80%;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            color: #e5e7eb;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            font-size: 0.9rem;
+            color: #9ca3af;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>LOGO CONCEPTS - ROUND 47</h1>
+    <span class="subtitle">Strict Variations of Option 150 (Integrated Beam)</span>
+
+    <div class="concepts-container">
+
+        <!-- Concept 161: The Base 150 (Control) -->
+        <div class="concept-card">
+            <div class="check-container">
+                <div class="logo-box dark">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="c161g" x1="0" y1="0" x2="500" y2="0">
+                                <stop offset="0%" stop-color="#f59e0b" />
+                                <stop offset="100%" stop-color="#ef4444" />
+                            </linearGradient>
+                        </defs>
+                        <!-- G: Top-Right Extension Path -->
+                        <path d="M450 120 H50 V380 H150 V280 H100" stroke="url(#c161g)" stroke-width="40"
+                            stroke-linecap="square" fill="none" />
+                        <!-- S: Bottom-Left Extension Path -->
+                        <path d="M350 180 H250 V300 H350 V420 H50" stroke="white" stroke-width="40"
+                            stroke-linecap="square" fill="none" />
+                        <!-- I -->
+                        <path d="M400 180 V420" stroke="white" stroke-width="40" stroke-linecap="square" />
+                    </svg>
+                </div>
+                <div class="logo-box light">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="c161g2" x1="0" y1="0" x2="500" y2="0">
+                                <stop offset="0%" stop-color="#f59e0b" />
+                                <stop offset="100%" stop-color="#ef4444" />
+                            </linearGradient>
+                        </defs>
+                        <path d="M450 120 H50 V380 H150 V280 H100" stroke="url(#c161g2)" stroke-width="40"
+                            stroke-linecap="square" fill="none" />
+                        <path d="M350 180 H250 V300 H350 V420 H50" stroke="#0f172a" stroke-width="40"
+                            stroke-linecap="square" fill="none" />
+                        <path d="M400 180 V420" stroke="#0f172a" stroke-width="40" stroke-linecap="square" />
+                    </svg>
+                </div>
+            </div>
+            <h2>Option 161: The Base Reference</h2>
+            <p><strong>Variation:</strong> Original 150. Reference point. Standard stroke width (40px) and spacing.</p>
+        </div>
+
+        <!-- Concept 162: Zero Gap (Tight) -->
+        <div class="concept-card">
+            <div class="check-container">
+                <div class="logo-box dark">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="c162g" x1="0" y1="0" x2="500" y2="0">
+                                <stop offset="0%" stop-color="#f59e0b" />
+                                <stop offset="100%" stop-color="#ef4444" />
+                            </linearGradient>
+                        </defs>
+                        <!-- Moved letters closer. G ends x=150. S starts x=190 normally. Here x=170? -->
+                        <!-- Actually make them TOUCH vertically? "No gap" -->
+
+                        <!-- G -->
+                        <path d="M450 120 H50 V380 H150 V280 H100" stroke="url(#c162g)" stroke-width="40"
+                            stroke-linecap="square" fill="none" />
+
+                        <!-- S (Shifted Left to touch G bounding box) -->
+                        <!-- G vertical is at x=50 to x=90 (stroke width 40). G right side of H150 is x=150. -->
+                        <!-- Let's start S at x=190. Standard gap is 40. Reduce gap to 10? -->
+                        <path d="M320 180 H210 V300 H310 V420 H50" stroke="white" stroke-width="40"
+                            stroke-linecap="square" fill="none" />
+
+                        <!-- I -->
+                        <path d="M370 180 V420" stroke="white" stroke-width="40" stroke-linecap="square" />
+                    </svg>
+                </div>
+                <div class="logo-box light">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="c162g2" x1="0" y1="0" x2="500" y2="0">
+                                <stop offset="0%" stop-color="#f59e0b" />
+                                <stop offset="100%" stop-color="#ef4444" />
+                            </linearGradient>
+                        </defs>
+                        <path d="M450 120 H50 V380 H150 V280 H100" stroke="url(#c162g2)" stroke-width="40"
+                            stroke-linecap="square" fill="none" />
+                        <path d="M320 180 H210 V300 H310 V420 H50" stroke="#0f172a" stroke-width="40"
+                            stroke-linecap="square" fill="none" />
+                        <path d="M370 180 V420" stroke="#0f172a" stroke-width="40" stroke-linecap="square" />
+                    </svg>
+                </div>
+            </div>
+            <h2>Option 162: Zero Gap</h2>
+            <p><strong>Variation:</strong> Tight Packing. Reduced horizontal spacing between letterforms for a denser
+                block.</p>
+        </div>
+
+        <!-- Concept 163: Heavy Beam (Bold) -->
+        <div class="concept-card">
+            <div class="check-container">
+                <div class="logo-box dark">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="c163g" x1="0" y1="0" x2="500" y2="0">
+                                <stop offset="0%" stop-color="#10b981" />
+                                <stop offset="100%" stop-color="#3b82f6" />
+                            </linearGradient>
+                        </defs>
+                        <!-- Stroke Width 60 -->
+                        <path d="M450 110 H60 V390 H160 V280 H100" stroke="url(#c163g)" stroke-width="60"
+                            stroke-linecap="square" fill="none" />
+
+                        <path d="M350 170 H250 V300 H350 V430 H60" stroke="white" stroke-width="60"
+                            stroke-linecap="square" fill="none" />
+
+                        <path d="M420 170 V430" stroke="white" stroke-width="60" stroke-linecap="square" />
+                    </svg>
+                </div>
+                <div class="logo-box light">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="c163g2" x1="0" y1="0" x2="500" y2="0">
+                                <stop offset="0%" stop-color="#10b981" />
+                                <stop offset="100%" stop-color="#3b82f6" />
+                            </linearGradient>
+                        </defs>
+                        <path d="M450 110 H60 V390 H160 V280 H100" stroke="url(#c163g2)" stroke-width="60"
+                            stroke-linecap="square" fill="none" />
+                        <path d="M350 170 H250 V300 H350 V430 H60" stroke="#0f172a" stroke-width="60"
+                            stroke-linecap="square" fill="none" />
+                        <path d="M420 170 V430" stroke="#0f172a" stroke-width="60" stroke-linecap="square" />
+                    </svg>
+                </div>
+            </div>
+            <h2>Option 163: Heavy Beam</h2>
+            <p><strong>Variation:</strong> Bold Weight. Increased stroke width (60px) for a much more solid, industrial
+                presence.</p>
+        </div>
+
+        <!-- Concept 164: Light Beam (Thin) -->
+        <div class="concept-card">
+            <div class="check-container">
+                <div class="logo-box dark">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="c164g" x1="0" y1="0" x2="500" y2="0">
+                                <stop offset="0%" stop-color="#8b5cf6" />
+                                <stop offset="100%" stop-color="#ec4899" />
+                            </linearGradient>
+                        </defs>
+                        <!-- Stroke Width 25 -->
+                        <path d="M450 130 H40 V370 H140 V280 H90" stroke="url(#c164g)" stroke-width="25"
+                            stroke-linecap="square" fill="none" />
+                        <path d="M350 190 H250 V300 H350 V410 H40" stroke="white" stroke-width="25"
+                            stroke-linecap="square" fill="none" />
+                        <path d="M400 190 V410" stroke="white" stroke-width="25" stroke-linecap="square" />
+                    </svg>
+                </div>
+                <div class="logo-box light">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="c164g2" x1="0" y1="0" x2="500" y2="0">
+                                <stop offset="0%" stop-color="#8b5cf6" />
+                                <stop offset="100%" stop-color="#ec4899" />
+                            </linearGradient>
+                        </defs>
+                        <path d="M450 130 H40 V370 H140 V280 H90" stroke="url(#c164g2)" stroke-width="25"
+                            stroke-linecap="square" fill="none" />
+                        <path d="M350 190 H250 V300 H350 V410 H40" stroke="#0f172a" stroke-width="25"
+                            stroke-linecap="square" fill="none" />
+                        <path d="M400 190 V410" stroke="#0f172a" stroke-width="25" stroke-linecap="square" />
+                    </svg>
+                </div>
+            </div>
+            <h2>Option 164: Light Beam</h2>
+            <p><strong>Variation:</strong> Light Weight. Reduced stroke width (25px) for a sharper, more elegant
+                blueprint look.</p>
+        </div>
+
+        <!-- Concept 165: Chamfered Tips -->
+        <div class="concept-card">
+            <div class="check-container">
+                <div class="logo-box dark">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="c165g" x1="0" y1="0" x2="500" y2="0">
+                                <stop offset="0%" stop-color="#f59e0b" />
+                                <stop offset="100%" stop-color="#ef4444" />
+                            </linearGradient>
+                        </defs>
+                        <!-- G with angled cut at end -->
+                        <!-- Manual path drafting for chamfer -->
+                        <path d="M450 120 L420 120 H50 V380 H150 V280" stroke="url(#c165g)" stroke-width="40"
+                            stroke-linecap="butt" fill="none" />
+                        <!-- Drawing the tip manually to show chamfer -->
+                        <path d="M450 100 L470 140 H450" fill="none" />
+                        <!-- Just hinting visuals with stroke-line cap butt? No, SVG stroke cap doesn't do 45 deg. -->
+                        <!-- Using a mask or just polygon is safer. Sticking to stroke for consistency but adding a cut. -->
+                        <path d="M450 120 L420 150" stroke="none" fill="none" /> <!-- Fake -->
+
+                        <!-- Let's just use the stroke but add a small angled line at the tip -->
+                        <path d="M450 120 L470 120" stroke="url(#c165g)" stroke-width="40" stroke-linecap="butt"
+                            transform="rotate(-45, 450, 120)" /> <!-- Angled tip? messy. -->
+
+                        <!-- Revert to simple: Overlapping GSI 150 style but with Butt caps (Sharp 90) which is slightly different than Square -->
+                        <path d="M450 120 H50 V380 H150 V280 H100" stroke="url(#c165g)" stroke-width="40"
+                            stroke-linecap="butt" fill="none" />
+                        <path d="M350 180 H250 V300 H350 V420 H50" stroke="white" stroke-width="40"
+                            stroke-linecap="butt" fill="none" />
+                        <path d="M400 180 V420" stroke="white" stroke-width="40" stroke-linecap="butt" />
+                    </svg>
+                </div>
+                <div class="logo-box light">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="c165g2" x1="0" y1="0" x2="500" y2="0">
+                                <stop offset="0%" stop-color="#f59e0b" />
+                                <stop offset="100%" stop-color="#ef4444" />
+                            </linearGradient>
+                        </defs>
+                        <path d="M450 120 H50 V380 H150 V280 H100" stroke="url(#c165g2)" stroke-width="40"
+                            stroke-linecap="butt" fill="none" />
+                        <path d="M350 180 H250 V300 H350 V420 H50" stroke="#0f172a" stroke-width="40"
+                            stroke-linecap="butt" fill="none" />
+                        <path d="M400 180 V420" stroke="#0f172a" stroke-width="40" stroke-linecap="butt" />
+                    </svg>
+                </div>
+            </div>
+            <h2>Option 165: The Flat Cut</h2>
+            <p><strong>Variation:</strong> Butt Caps. Ends are cut flat exactly at the coordinate, not extending past
+                (Square Cap). Crisper.</p>
+        </div>
+
+        <!-- Concept 166: Vertical Lock (Taller) -->
+        <div class="concept-card">
+            <div class="check-container">
+                <div class="logo-box dark">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="c166g" x1="0" y1="0" x2="500" y2="0">
+                                <stop offset="0%" stop-color="#3b82f6" />
+                                <stop offset="100%" stop-color="#8b5cf6" />
+                            </linearGradient>
+                        </defs>
+                        <!-- Stretched vertically for a taller aspect ratio logo look -->
+                        <path d="M450 100 H50 V400 H150 V280 H100" stroke="url(#c166g)" stroke-width="40"
+                            stroke-linecap="square" fill="none" />
+                        <path d="M350 180 H250 V320 H350 V420 H50" stroke="white" stroke-width="40"
+                            stroke-linecap="square" fill="none" />
+                        <path d="M400 180 V420" stroke="white" stroke-width="40" stroke-linecap="square" />
+                    </svg>
+                </div>
+                <div class="logo-box light">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="c166g2" x1="0" y1="0" x2="500" y2="0">
+                                <stop offset="0%" stop-color="#3b82f6" />
+                                <stop offset="100%" stop-color="#8b5cf6" />
+                            </linearGradient>
+                        </defs>
+                        <path d="M450 100 H50 V400 H150 V280 H100" stroke="url(#c166g2)" stroke-width="40"
+                            stroke-linecap="square" fill="none" />
+                        <path d="M350 180 H250 V320 H350 V420 H50" stroke="#0f172a" stroke-width="40"
+                            stroke-linecap="square" fill="none" />
+                        <path d="M400 180 V420" stroke="#0f172a" stroke-width="40" stroke-linecap="square" />
+                    </svg>
+                </div>
+            </div>
+            <h2>Option 166: Vertical Lock</h2>
+            <p><strong>Variation:</strong> Tall Aspect. The G leg goes deeper. The S leg goes higher. More vertical
+                overlap/interlock.</p>
+        </div>
+
+        <!-- Concept 167: Wide Stance -->
+        <div class="concept-card">
+            <div class="check-container">
+                <div class="logo-box dark">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="c167g" x1="0" y1="0" x2="500" y2="0">
+                                <stop offset="0%" stop-color="#10b981" />
+                                <stop offset="100%" stop-color="#0ea5e9" />
+                            </linearGradient>
+                        </defs>
+                        <!-- Wider letters -->
+                        <path d="M480 120 H50 V380 H180 V280" stroke="url(#c167g)" stroke-width="40"
+                            stroke-linecap="square" fill="none" />
+                        <path d="M380 180 H250 V300 H380 V420 H50" stroke="white" stroke-width="40"
+                            stroke-linecap="square" fill="none" />
+                        <path d="M440 180 V420" stroke="white" stroke-width="40" stroke-linecap="square" />
+                    </svg>
+                </div>
+                <div class="logo-box light">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="c167g2" x1="0" y1="0" x2="500" y2="0">
+                                <stop offset="0%" stop-color="#10b981" />
+                                <stop offset="100%" stop-color="#0ea5e9" />
+                            </linearGradient>
+                        </defs>
+                        <path d="M480 120 H50 V380 H180 V280" stroke="url(#c167g2)" stroke-width="40"
+                            stroke-linecap="square" fill="none" />
+                        <path d="M380 180 H250 V300 H380 V420 H50" stroke="#0f172a" stroke-width="40"
+                            stroke-linecap="square" fill="none" />
+                        <path d="M440 180 V420" stroke="#0f172a" stroke-width="40" stroke-linecap="square" />
+                    </svg>
+                </div>
+            </div>
+            <h2>Option 167: Wide Stance</h2>
+            <p><strong>Variation:</strong> Extended Width. The S and I are wider, filling more horizontal space. More
+                imposing.</p>
+        </div>
+
+        <!-- Concept 168: Compact Stack -->
+        <div class="concept-card">
+            <div class="check-container">
+                <div class="logo-box dark">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="c168g" x1="0" y1="0" x2="500" y2="0">
+                                <stop offset="0%" stop-color="#ec4899" />
+                                <stop offset="100%" stop-color="#f59e0b" />
+                            </linearGradient>
+                        </defs>
+                        <!-- Squat, compressed -->
+                        <path d="M450 150 H50 V350 H150 V280" stroke="url(#c168g)" stroke-width="40"
+                            stroke-linecap="square" fill="none" />
+                        <path d="M350 200 H220 V280 H350 V400 H50" stroke="white" stroke-width="40"
+                            stroke-linecap="square" fill="none" />
+                        <path d="M400 200 V400" stroke="white" stroke-width="40" stroke-linecap="square" />
+                    </svg>
+                </div>
+                <div class="logo-box light">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="c168g2" x1="0" y1="0" x2="500" y2="0">
+                                <stop offset="0%" stop-color="#ec4899" />
+                                <stop offset="100%" stop-color="#f59e0b" />
+                            </linearGradient>
+                        </defs>
+                        <path d="M450 150 H50 V350 H150 V280" stroke="url(#c168g2)" stroke-width="40"
+                            stroke-linecap="square" fill="none" />
+                        <path d="M350 200 H220 V280 H350 V400 H50" stroke="#0f172a" stroke-width="40"
+                            stroke-linecap="square" fill="none" />
+                        <path d="M400 200 V400" stroke="#0f172a" stroke-width="40" stroke-linecap="square" />
+                    </svg>
+                </div>
+            </div>
+            <h2>Option 168: Compact Stack</h2>
+            <p><strong>Variation:</strong> Compressed. The vertical height is reduced, making the logo feel denser and
+                more streamlined.</p>
+        </div>
+
+        <!-- Concept 169: Split Tone -->
+        <div class="concept-card">
+            <div class="check-container">
+                <div class="logo-box dark">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- G Base -->
+                        <path d="M150 280 H100" stroke="white" stroke-width="40" stroke-linecap="square" />
+                        <path d="M50 380 V120 H450" stroke="#22d3ee" stroke-width="40" stroke-linecap="square"
+                            fill="none" /> <!-- G Color Ext only -->
+                        <path d="M50 200 V380 H150" stroke="white" stroke-width="40" stroke-linecap="square"
+                            fill="none" /> <!-- G Body White -->
+
+                        <!-- S -->
+                        <path d="M350 180 H250 V300 H350 V420" stroke="white" stroke-width="40" stroke-linecap="square"
+                            fill="none" /> <!-- S Body White -->
+                        <path d="M350 420 H50" stroke="#22d3ee" stroke-width="40" stroke-linecap="square" />
+                        <!-- S Color Ext only -->
+
+                        <!-- I -->
+                        <path d="M400 180 V420" stroke="white" stroke-width="40" stroke-linecap="square" />
+                    </svg>
+                </div>
+                <div class="logo-box light">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M150 280 H100" stroke="#0f172a" stroke-width="40" stroke-linecap="square" />
+                        <path d="M50 380 V120 H450" stroke="#22d3ee" stroke-width="40" stroke-linecap="square"
+                            fill="none" />
+                        <path d="M50 200 V380 H150" stroke="#0f172a" stroke-width="40" stroke-linecap="square"
+                            fill="none" />
+
+                        <path d="M350 180 H250 V300 H350 V420" stroke="#0f172a" stroke-width="40"
+                            stroke-linecap="square" fill="none" />
+                        <path d="M350 420 H50" stroke="#22d3ee" stroke-width="40" stroke-linecap="square" />
+
+                        <path d="M400 180 V420" stroke="#0f172a" stroke-width="40" stroke-linecap="square" />
+                    </svg>
+                </div>
+            </div>
+            <h2>Option 169: Split Tone</h2>
+            <p><strong>Variation:</strong> Two-Tone. Separation of the "Letter Body" (White/Black) from the "Extension
+                Beam" (Color). Highlights the mechanics.</p>
+        </div>
+
+        <!-- Concept 170: The Tech Joint -->
+        <div class="concept-card">
+            <div class="check-container">
+                <div class="logo-box dark">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="c170g" x1="0" y1="0" x2="500" y2="0">
+                                <stop offset="0%" stop-color="#4ade80" />
+                                <stop offset="100%" stop-color="#3b82f6" />
+                            </linearGradient>
+                        </defs>
+                        <!-- Rounded inner corners, Square outer -->
+                        <path d="M450 120 H50 V380 H150 V280 H100" stroke="url(#c170g)" stroke-width="40"
+                            stroke-linecap="square" stroke-linejoin="round" fill="none" />
+                        <path d="M350 180 H250 V300 H350 V420 H50" stroke="white" stroke-width="40"
+                            stroke-linecap="square" stroke-linejoin="round" fill="none" />
+                        <path d="M400 180 V420" stroke="white" stroke-width="40" stroke-linecap="square" />
+                    </svg>
+                </div>
+                <div class="logo-box light">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="c170g2" x1="0" y1="0" x2="500" y2="0">
+                                <stop offset="0%" stop-color="#4ade80" />
+                                <stop offset="100%" stop-color="#3b82f6" />
+                            </linearGradient>
+                        </defs>
+                        <path d="M450 120 H50 V380 H150 V280 H100" stroke="url(#c170g2)" stroke-width="40"
+                            stroke-linecap="square" stroke-linejoin="round" fill="none" />
+                        <path d="M350 180 H250 V300 H350 V420 H50" stroke="#0f172a" stroke-width="40"
+                            stroke-linecap="square" stroke-linejoin="round" fill="none" />
+                        <path d="M400 180 V420" stroke="#0f172a" stroke-width="40" stroke-linecap="square" />
+                    </svg>
+                </div>
+            </div>
+            <h2>Option 170: The Tech Joint</h2>
+            <p><strong>Variation:</strong> Rounded Joints. Uses `stroke-linejoin="round"` to soften the internal angles
+                while keeping the external silhouette blocky.</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

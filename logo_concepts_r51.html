@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSI Corp Logo Concepts - Round 51</title>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #0a0f1c;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 2rem;
+        }
+
+        h1 {
+            margin-bottom: 0.5rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            margin-bottom: 3rem;
+            color: #ec4899;
+            /* Cyber Pink */
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .concepts-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            max-width: 1400px;
+            width: 100%;
+        }
+
+        .concept-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 1rem;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .concept-card:hover {
+            transform: translateY(-5px);
+            border-color: #ec4899;
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .check-container {
+            width: 100%;
+            display: flex;
+            gap: 10px;
+            margin-bottom: 1.5rem;
+        }
+
+        .logo-box {
+            flex: 1;
+            aspect-ratio: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .logo-box.dark {
+            background: #05080f;
+            border: 1px solid #1f2937;
+        }
+
+        .logo-box.light {
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+        }
+
+        .logo-box svg {
+            width: 80%;
+            height: 80%;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            color: #e5e7eb;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            font-size: 0.9rem;
+            color: #9ca3af;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>LOGO CONCEPTS - ROUND 51</h1>
+    <span class="subtitle">Variations of Option 198 (Cyber Chamfer)</span>
+
+    <div class="concepts-container">
+
+        <!-- Concept 201: The Base Cyber (Reference) -->
+        <div class="concept-card">
+            <div class="check-container">
+                <div class="logo-box dark">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g transform="skewX(-15) translate(40, 0)">
+                            <!-- G: 40px -->
+                            <path d="M450 140 H100 L60 180 V360 H160 V280" stroke="#ec4899" stroke-width="40"
+                                stroke-linecap="butt" stroke-linejoin="bevel" fill="none" />
+                            <!-- S: 60px -->
+                            <path d="M350 220 H220 V300 H310 L350 340 V430 H60" stroke="#ffffff" stroke-width="60"
+                                stroke-linecap="butt" stroke-linejoin="bevel" fill="none" />
+                            <!-- I: 40px -->
+                            <path d="M420 220 V430" stroke="#ffffff" stroke-width="40" stroke-linecap="butt" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="logo-box light">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g transform="skewX(-15) translate(40, 0)">
+                            <path d="M450 140 H100 L60 180 V360 H160 V280" stroke="#ec4899" stroke-width="40"
+                                stroke-linecap="butt" stroke-linejoin="bevel" fill="none" />
+                            <path d="M350 220 H220 V300 H310 L350 340 V430 H60" stroke="#0f172a" stroke-width="60"
+                                stroke-linecap="butt" stroke-linejoin="bevel" fill="none" />
+                            <path d="M420 220 V430" stroke="#0f172a" stroke-width="40" stroke-linecap="butt" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <h2>Option 201: The Base Cyber</h2>
+            <p><strong>Chamfer:</strong> Standard 45 Deg. Original Option 198 reference. Balanced cuts on the primary
+                turns.</p>
+        </div>
+
+        <!-- Concept 202: Deep Chamfer -->
+        <div class="concept-card">
+            <div class="check-container">
+                <div class="logo-box dark">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="c202g" x1="0" y1="0" x2="500" y2="0">
+                                <stop offset="0%" stop-color="#ec4899" />
+                                <stop offset="100%" stop-color="#8b5cf6" />
+                            </linearGradient>
+                        </defs>
+                        <g transform="skewX(-15) translate(40, 0)">
+                            <!-- More aggressive cuts. G Corner starts cut at 140, 140? -->
+                            <path d="M450 140 H140 L60 220 V360 H160" stroke="url(#c202g)" stroke-width="40"
+                                stroke-linecap="butt" stroke-linejoin="bevel" fill="none" />
+
+                            <!-- S Cut -->
+                            <path d="M350 220 H220 V260 L260 300 H310 L350 340 V390 L310 430 H60" stroke="#ffffff"
+                                stroke-width="60" stroke-linecap="butt" stroke-linejoin="bevel" fill="none" />
+
+                            <path d="M420 220 V430" stroke="#ffffff" stroke-width="40" stroke-linecap="butt" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="logo-box light">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="c202g2" x1="0" y1="0" x2="500" y2="0">
+                                <stop offset="0%" stop-color="#ec4899" />
+                                <stop offset="100%" stop-color="#8b5cf6" />
+                            </linearGradient>
+                        </defs>
+                        <g transform="skewX(-15) translate(40, 0)">
+                            <path d="M450 140 H140 L60 220 V360 H160" stroke="url(#c202g2)" stroke-width="40"
+                                stroke-linecap="butt" stroke-linejoin="bevel" fill="none" />
+                            <path d="M350 220 H220 V260 L260 300 H310 L350 340 V390 L310 430 H60" stroke="#0f172a"
+                                stroke-width="60" stroke-linecap="butt" stroke-linejoin="bevel" fill="none" />
+                            <path d="M420 220 V430" stroke="#0f172a" stroke-width="40" stroke-linecap="butt" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <h2>Option 202: Deep Chamfer</h2>
+            <p><strong>Chamfer:</strong> Radical. The cuts are much longer (80px), creating a more geometric,
+                stealth-fighter silhouette.</p>
+        </div>
+
+        <!-- Concept 203: The Hex Cut -->
+        <div class="concept-card">
+            <div class="check-container">
+                <div class="logo-box dark">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g transform="skewX(-15) translate(40, 0)">
+                            <!-- 30/60 degree angles -->
+                            <!-- G -->
+                            <path d="M450 140 H120 L60 240 V360 H160" stroke="#22d3ee" stroke-width="40"
+                                stroke-linecap="butt" stroke-linejoin="bevel" fill="none" />
+
+                            <!-- S -->
+                            <path d="M350 220 H220 V280 L250 300 H320 L350 320 V430 H60" stroke="#ffffff"
+                                stroke-width="60" stroke-linecap="butt" stroke-linejoin="bevel" fill="none" />
+
+                            <path d="M420 220 V430" stroke="#ffffff" stroke-width="40" stroke-linecap="butt" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="logo-box light">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g transform="skewX(-15) translate(40, 0)">
+                            <path d="M450 140 H120 L60 240 V360 H160" stroke="#22d3ee" stroke-width="40"
+                                stroke-linecap="butt" stroke-linejoin="bevel" fill="none" />
+                            <path d="M350 220 H220 V280 L250 300 H320 L350 320 V430 H60" stroke="#0f172a"
+                                stroke-width="60" stroke-linecap="butt" stroke-linejoin="bevel" fill="none" />
+                            <path d="M420 220 V430" stroke="#0f172a" stroke-width="40" stroke-linecap="butt" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <h2>Option 203: The Hex Cut</h2>
+            <p><strong>Chamfer:</strong> 60 Degree. Steeper angles that mimic hexagon/techno geometry rather than
+                standard 45s.</p>
+        </div>
+
+        <!-- Concept 204: Inverted Notch -->
+        <div class="concept-card">
+            <div class="check-container">
+                <div class="logo-box dark">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g transform="skewX(-15) translate(40, 0)">
+                            <!-- Instead of cutting the outer corner, cut the inner corner? Or a bite? -->
+                            <!-- Bite notch -->
+                            <path d="M450 140 H100 L60 180 V360 H160" stroke="#f59e0b" stroke-width="40"
+                                stroke-linecap="butt" stroke-linejoin="miter" fill="none" />
+                            <!-- Just remove the bevel on stroke join, do it manually -->
+
+                            <!-- G -->
+                            <path d="M450 140 H100 L60 180 V360 H160" stroke="#f59e0b" stroke-width="40" fill="none" />
+                            <!-- Notch cut out of G corner -->
+                            <path d="M80 140 L120 180" stroke="black" stroke-width="10" /> <!-- Fake cut for visual -->
+
+                            <!-- Let's do a clean polygon path for "Inverted Notch" -->
+                            <!-- G -->
+                            <path d="M450 120 V160 H120 L120 200 L80 200 V380 H160 L160 340 L180 340" fill="#f59e0b" />
+                            <!-- Filled shape -->
+
+                            <!-- S -->
+                            <path d="M350 220 H220 V300 H320 L350 340 V430 H60" stroke="#ffffff" stroke-width="60"
+                                stroke-linecap="square" fill="none" />
+
+                            <path d="M420 220 V430" stroke="#ffffff" stroke-width="40" stroke-linecap="square" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="logo-box light">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g transform="skewX(-15) translate(40, 0)">
+                            <!-- G filled -->
+                            <path d="M450 120 V160 H120 L120 200 L80 200 V380 H160 L160 340 L180 340" fill="#f59e0b" />
+
+                            <path d="M350 220 H220 V300 H320 L350 340 V430 H60" stroke="#0f172a" stroke-width="60"
+                                stroke-linecap="square" fill="none" />
+                            <path d="M420 220 V430" stroke="#0f172a" stroke-width="40" stroke-linecap="square" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <h2>Option 204: Inverted Notch</h2>
+            <p><strong>Chamfer:</strong> Internal Step. The corners step inwards (90 degree notches) instead of
+                smoothing out.</p>
+        </div>
+
+        <!-- Concept 205: The Segmented -->
+        <div class="concept-card">
+            <div class="check-container">
+                <div class="logo-box dark">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g transform="skewX(-15) translate(40, 0)">
+                            <!-- Chamfered but broken -->
+                            <!-- G Top -->
+                            <path d="M450 140 H100 L80 160" stroke="#10b981" stroke-width="40" stroke-linecap="butt"
+                                fill="none" />
+                            <!-- G Side -->
+                            <path d="M60 180 L60 360 H160" stroke="#10b981" stroke-width="40" stroke-linecap="butt"
+                                fill="none" />
+
+                            <!-- S -->
+                            <path d="M350 220 H220 V300 H320" stroke="white" stroke-width="60" stroke-linecap="butt"
+                                fill="none" />
+                            <path d="M320 340 L350 370 V430 H60" stroke="white" stroke-width="60" stroke-linecap="butt"
+                                fill="none" />
+
+                            <path d="M420 220 V430" stroke="white" stroke-width="40" stroke-linecap="butt" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="logo-box light">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g transform="skewX(-15) translate(40, 0)">
+                            <path d="M450 140 H100 L80 160" stroke="#10b981" stroke-width="40" stroke-linecap="butt"
+                                fill="none" />
+                            <path d="M60 180 L60 360 H160" stroke="#10b981" stroke-width="40" stroke-linecap="butt"
+                                fill="none" />
+
+                            <path d="M350 220 H220 V300 H320" stroke="#0f172a" stroke-width="60" stroke-linecap="butt"
+                                fill="none" />
+                            <path d="M320 340 L350 370 V430 H60" stroke="#0f172a" stroke-width="60"
+                                stroke-linecap="butt" fill="none" />
+
+                            <path d="M420 220 V430" stroke="#0f172a" stroke-width="40" stroke-linecap="butt" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <h2>Option 205: The Segmented</h2>
+            <p><strong>Chamfer:</strong> Broken Joint. The cuts act as break points, separating the logo into modular
+                plates.</p>
+        </div>
+
+        <!-- Concept 206: The Dual Cut -->
+        <div class="concept-card">
+            <div class="check-container">
+                <div class="logo-box dark">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g transform="skewX(-15) translate(40, 0)">
+                            <!-- Double chamfer on corners (Gem cut) -->
+                            <!-- Simulate with stroke linejoin miter? No, manual path -->
+
+                            <!-- G -->
+                            <path d="M450 140 H110 L85 155 L60 180 V360 H160" stroke="#3b82f6" stroke-width="40"
+                                stroke-linecap="butt" stroke-linejoin="round" fill="none" />
+                            <!-- Just rounded join on 198 is actually subtle dual cut feel -->
+                            <!-- Let's try explicit 2-step cut -->
+                            <path d="M450 140 H120 L90 150 L60 180 V360 H160" stroke="#3b82f6" stroke-width="40"
+                                stroke-linecap="butt" stroke-linejoin="bevel" fill="none" />
+
+                            <!-- S -->
+                            <path d="M350 220 H220 V290 L260 310 L300 330 V430 H60" stroke="#white" stroke-width="60"
+                                stroke-linecap="butt" stroke-linejoin="bevel" fill="none" />
+
+                            <path d="M420 220 V430" stroke="white" stroke-width="40" stroke-linecap="butt" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="logo-box light">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g transform="skewX(-15) translate(40, 0)">
+                            <path d="M450 140 H120 L90 150 L60 180 V360 H160" stroke="#3b82f6" stroke-width="40"
+                                stroke-linecap="butt" stroke-linejoin="bevel" fill="none" />
+                            <path d="M350 220 H220 V290 L260 310 L300 330 V430 H60" stroke="#0f172a" stroke-width="60"
+                                stroke-linecap="butt" stroke-linejoin="bevel" fill="none" />
+                            <path d="M420 220 V430" stroke="#0f172a" stroke-width="40" stroke-linecap="butt" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <h2>Option 206: The Dual Cut</h2>
+            <p><strong>Chamfer:</strong> Gem Facet. Double-angle cuts on the turns, creating a more complex, jewel-like
+                faceting.</p>
+        </div>
+
+        <!-- Concept 207: The Razor Grid -->
+        <div class="concept-card">
+            <div class="check-container">
+                <div class="logo-box dark">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g transform="skewX(-15) translate(40, 0)">
+                            <!-- Thin strokes + Cuts -->
+                            <path d="M450 150 H100 L60 190 V350 H160" stroke="#ec4899" stroke-width="20"
+                                stroke-linecap="butt" stroke-linejoin="bevel" fill="none" />
+
+                            <path d="M350 220 H220 V300 H310 L350 340 V430 H60" stroke="white" stroke-width="30"
+                                stroke-linecap="butt" stroke-linejoin="bevel" fill="none" />
+
+                            <path d="M420 220 V430" stroke="white" stroke-width="20" stroke-linecap="butt" />
+
+                            <!-- Grid lines -->
+                            <path d="M0 150 H500" stroke="#ec4899" stroke-width="1" opacity="0.5" />
+                            <path d="M0 430 H500" stroke="white" stroke-width="1" opacity="0.5" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="logo-box light">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g transform="skewX(-15) translate(40, 0)">
+                            <path d="M450 150 H100 L60 190 V350 H160" stroke="#ec4899" stroke-width="20"
+                                stroke-linecap="butt" stroke-linejoin="bevel" fill="none" />
+                            <path d="M350 220 H220 V300 H310 L350 340 V430 H60" stroke="#0f172a" stroke-width="30"
+                                stroke-linecap="butt" stroke-linejoin="bevel" fill="none" />
+                            <path d="M420 220 V430" stroke="#0f172a" stroke-width="20" stroke-linecap="butt" />
+
+                            <path d="M0 150 H500" stroke="#ec4899" stroke-width="1" opacity="0.5" />
+                            <path d="M0 430 H500" stroke="#0f172a" stroke-width="1" opacity="0.5" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <h2>Option 207: The Razor Grid</h2>
+            <p><strong>Chamfer:</strong> Wireframe. Thin strokes with sharp bevels, sitting on a fine construction grid.
+            </p>
+        </div>
+
+        <!-- Concept 208: The Heavy Plate -->
+        <div class="concept-card">
+            <div class="check-container">
+                <div class="logo-box dark">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g transform="skewX(-15) translate(40, 0)">
+                            <!-- Massive strokes -->
+                            <path d="M450 130 H100 L50 180 V370 H160" stroke="#f59e0b" stroke-width="60"
+                                stroke-linecap="butt" stroke-linejoin="bevel" fill="none" />
+
+                            <path d="M350 210 H220 V290 H310 L350 330 V430 H50" stroke="white" stroke-width="80"
+                                stroke-linecap="butt" stroke-linejoin="bevel" fill="none" />
+
+                            <path d="M420 210 V430" stroke="white" stroke-width="60" stroke-linecap="butt" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="logo-box light">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g transform="skewX(-15) translate(40, 0)">
+                            <path d="M450 130 H100 L50 180 V370 H160" stroke="#f59e0b" stroke-width="60"
+                                stroke-linecap="butt" stroke-linejoin="bevel" fill="none" />
+                            <path d="M350 210 H220 V290 H310 L350 330 V430 H50" stroke="#0f172a" stroke-width="80"
+                                stroke-linecap="butt" stroke-linejoin="bevel" fill="none" />
+                            <path d="M420 210 V430" stroke="#0f172a" stroke-width="60" stroke-linecap="butt" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <h2>Option 208: The Heavy Plate</h2>
+            <p><strong>Chamfer:</strong> Armor. Ultra-thick strokes with bevels. Looks like tank plating or heavy
+                machinery.</p>
+        </div>
+
+        <!-- Concept 209: The Precision Cut -->
+        <div class="concept-card">
+            <div class="check-container">
+                <div class="logo-box dark">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g transform="skewX(-15) translate(40, 0)">
+                            <!-- Fine detail notch IN the bevel -->
+                            <path d="M450 140 H100 L60 180 V360 H160" stroke="#22d3ee" stroke-width="40"
+                                stroke-linecap="butt" stroke-linejoin="bevel" fill="none" />
+                            <!-- Detail line -->
+                            <path d="M100 140 L60 180" stroke="#0a0f1c" stroke-width="5" /> <!-- Negative cut line -->
+
+                            <path d="M350 220 H220 V300 H310 L350 340 V430 H60" stroke="white" stroke-width="60"
+                                stroke-linecap="butt" stroke-linejoin="bevel" fill="none" />
+                            <path d="M310 300 L350 340" stroke="#0a0f1c" stroke-width="5" />
+
+                            <path d="M420 220 V430" stroke="white" stroke-width="40" stroke-linecap="butt" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="logo-box light">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g transform="skewX(-15) translate(40, 0)">
+                            <path d="M450 140 H100 L60 180 V360 H160" stroke="#22d3ee" stroke-width="40"
+                                stroke-linecap="butt" stroke-linejoin="bevel" fill="none" />
+                            <path d="M100 140 L60 180" stroke="white" stroke-width="5" />
+
+                            <path d="M350 220 H220 V300 H310 L350 340 V430 H60" stroke="#0f172a" stroke-width="60"
+                                stroke-linecap="butt" stroke-linejoin="bevel" fill="none" />
+                            <path d="M310 300 L350 340" stroke="white" stroke-width="5" />
+
+                            <path d="M420 220 V430" stroke="#0f172a" stroke-width="40" stroke-linecap="butt" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <h2>Option 209: The Precision Cut</h2>
+            <p><strong>Chamfer:</strong> Panel Line. A fine negative line runs through the chamfer, emphasizing the
+                joinery.</p>
+        </div>
+
+        <!-- Concept 210: The Stealth Angle (Flat Tips) -->
+        <div class="concept-card">
+            <div class="check-container">
+                <div class="logo-box dark">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g transform="skewX(-15) translate(40, 0)">
+                            <!-- The ends of G and S are ALSO chamfered (angled), not flat -->
+                            <!-- G -->
+                            <path d="M450 120 L450 160 H100 L60 200 V360 H160" fill="#ec4899" /> <!-- Fill shape -->
+                            <!-- Cut angle on G Tip -->
+                            <!-- Re-do as path stroke with custom cap? No, manual shape -->
+                            <path d="M420 120 L450 140 L420 160" fill="none" />
+
+                            <!-- Manual Draw -->
+                            <path
+                                d="M420 120 L460 140 L420 160 H100 L60 200 V360 H160 V320 H90 V210 L120 180 H400 L420 120"
+                                fill="#ec4899" opacity="1" />
+                            <!-- Simplification: Stroke with Angled Cap -->
+
+                            <path d="M450 140 H100 L60 180 V360 H160" stroke="#ec4899" stroke-width="40"
+                                stroke-linecap="butt" stroke-linejoin="bevel" fill="none" />
+                            <!-- Manual Tip Cut -->
+                            <polygon points="450,120 470,140 450,160 430,140" fill="#ec4899" />
+
+                            <path d="M350 220 H220 V300 H310 L350 340 V430 H60" stroke="white" stroke-width="60"
+                                stroke-linecap="butt" stroke-linejoin="bevel" fill="none" />
+                            <!-- S Tip Cut -->
+                            <polygon points="60,400 40,430 60,460 80,430" fill="white" />
+
+                            <path d="M420 220 V430" stroke="white" stroke-width="40" stroke-linecap="butt" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="logo-box light">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g transform="skewX(-15) translate(40, 0)">
+                            <path d="M450 140 H100 L60 180 V360 H160" stroke="#ec4899" stroke-width="40"
+                                stroke-linecap="butt" stroke-linejoin="bevel" fill="none" />
+                            <polygon points="450,120 470,140 450,160 430,140" fill="#ec4899" />
+
+                            <path d="M350 220 H220 V300 H310 L350 340 V430 H60" stroke="#0f172a" stroke-width="60"
+                                stroke-linecap="butt" stroke-linejoin="bevel" fill="none" />
+                            <polygon points="60,400 40,430 60,460 80,430" fill="#0f172a" />
+
+                            <path d="M420 220 V430" stroke="#0f172a" stroke-width="40" stroke-linecap="butt" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <h2>Option 210: The Stealth Angle</h2>
+            <p><strong>Chamfer:</strong> Omni-Directional. Not just the corners, but the terminals (ends) are also
+                diamond-cut for maximum stealth geometry.</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

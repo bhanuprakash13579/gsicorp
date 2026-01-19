@@ -1,0 +1,8 @@
+<svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <title>GSI Corp Favicon</title>
+    <g transform="skewX(-15) translate(100, 0)">
+        <path d="M450 140 H100 A40 40 0 0 0 60 180 V320 A40 40 0 0 0 100 360 H160 V260" stroke="#3b82f6" stroke-width="40" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <path d="M350 220 H260 A40 40 0 0 0 220 260 V260 A40 40 0 0 0 260 300 H310 A40 40 0 0 1 350 340 V380 A40 40 0 0 1 310 420 H60" stroke="#94a3b8" stroke-width="40" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <path d="M420 220 V420" stroke="#3b82f6" stroke-width="40" stroke-linecap="round"/>
+    </g>
+</svg>

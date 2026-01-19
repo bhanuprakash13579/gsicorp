@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSI Corp Logo Concepts - Round 43</title>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #0a0f1c;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 2rem;
+        }
+
+        h1 {
+            margin-bottom: 0.5rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            margin-bottom: 3rem;
+            color: #ffffff;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            opacity: 0.7;
+        }
+
+        .concepts-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            max-width: 1400px;
+            width: 100%;
+        }
+
+        .concept-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 1rem;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .concept-card:hover {
+            transform: translateY(-5px);
+            border-color: #ffffff;
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .check-container {
+            width: 100%;
+            display: flex;
+            gap: 10px;
+            margin-bottom: 1.5rem;
+        }
+
+        .logo-box {
+            flex: 1;
+            aspect-ratio: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .logo-box.dark {
+            background: #05080f;
+            border: 1px solid #1f2937;
+        }
+
+        .logo-box.light {
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+        }
+
+        .logo-box svg {
+            width: 80%;
+            height: 80%;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            color: #e5e7eb;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            font-size: 0.9rem;
+            color: #9ca3af;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>LOGO CONCEPTS - ROUND 43</h1>
+    <span class="subtitle">Strict Geometry (Literal Construction)</span>
+
+    <div class="concepts-container">
+
+        <!-- Concept 142: The Linear Blueprint (Clean Lines) -->
+        <div class="concept-card">
+            <div class="check-container">
+                <div class="logo-box dark">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- G: Top-Left, stroke only. Top bar extends ALL THE WAY RIGHT -->
+                        <!-- Path: Start bottom-right of G, curve up, left, up, right (long extension) -->
+                        <path d="M150 250 H200" stroke="#3b82f6" stroke-width="25" stroke-linecap="round" />
+                        <!-- G Crossbar -->
+                        <path
+                            d="M200 250 V320 C200 350 170 350 150 350 H100 C80 350 50 320 50 250 V150 C50 80 80 50 150 50 H450"
+                            stroke="#3b82f6" stroke-width="25" stroke-linecap="round" fill="none" />
+
+                        <!-- S & I: Below the G extension -->
+
+                        <!-- S: Bottom-Right, stroke only. Bottom bar extends ALL THE WAY LEFT -->
+                        <!-- S starts below G extension. Overlaps/Underlaps G vertical space? -->
+                        <!-- Let's put S in the middle-right area -->
+                        <path
+                            d="M450 180 H350 C320 180 300 200 300 230 C300 260 320 280 350 280 H380 C410 280 430 300 430 330 C430 360 410 380 350 380 H50"
+                            stroke="#10b981" stroke-width="25" stroke-linecap="round" fill="none" />
+
+                        <!-- I: Vertical, standing between G body and S body -->
+                        <path d="M250 150 V380" stroke="white" stroke-width="25" stroke-linecap="round" />
+
+                    </svg>
+                </div>
+                <div class="logo-box light">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- G - Blue -->
+                        <path d="M150 250 H200" stroke="#3b82f6" stroke-width="25" stroke-linecap="round" />
+                        <path
+                            d="M200 250 V320 C200 350 170 350 150 350 H100 C80 350 50 320 50 250 V150 C50 80 80 50 150 50 H450"
+                            stroke="#3b82f6" stroke-width="25" stroke-linecap="round" fill="none" />
+
+                        <!-- S - Green -->
+                        <path
+                            d="M450 180 H350 C320 180 300 200 300 230 C300 260 320 280 350 280 H380 C410 280 430 300 430 330 C430 360 410 380 350 380 H50"
+                            stroke="#10b981" stroke-width="25" stroke-linecap="round" fill="none" />
+
+                        <!-- I - Dark -->
+                        <path d="M250 150 V380" stroke="#0f172a" stroke-width="25" stroke-linecap="round" />
+                    </svg>
+                </div>
+            </div>
+            <h2>Option 142: The Linear Blueprint</h2>
+            <p><strong>Geometry:</strong> Wireframe Extensions. The G's top line shoots across the entire top. The S's
+                bottom line shoots across the entire bottom. The I supports the center.</p>
+        </div>
+
+        <!-- Concept 143: The Solid Stack (Block Shapes) -->
+        <div class="concept-card">
+            <div class="check-container">
+                <div class="logo-box dark">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- G: Massive block on top-left, extending right as a roof -->
+                        <path d="M50 80 H450 V160 H150 V320 H50 V80" fill="#3b82f6" /> <!-- The Roof & Spine -->
+                        <rect x="50" y="240" width="180" height="80" fill="#3b82f6" /> <!-- Lower G part -->
+
+                        <!-- I: Vertical monolith in the center -->
+                        <rect x="220" y="180" width="60" height="240" fill="white" />
+
+                        <!-- S: Block on right, extending left as floor -->
+                        <path d="M450 420 H50 V340 H350 V180 H450 V420" fill="#f59e0b" /> <!-- The Floor & Spine -->
+                        <!-- Some negative space cuts to define S shape -->
+                        <path d="M350 260 H450" stroke="#05080f" stroke-width="10" />
+
+                    </svg>
+                </div>
+                <div class="logo-box light">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- G -->
+                        <path d="M50 80 H450 V160 H150 V320 H50 V80" fill="#3b82f6" />
+                        <rect x="50" y="240" width="180" height="80" fill="#3b82f6" />
+
+                        <!-- I -->
+                        <rect x="220" y="180" width="60" height="240" fill="#0f172a" />
+
+                        <!-- S -->
+                        <path d="M450 420 H50 V340 H350 V180 H450 V420" fill="#f59e0b" />
+                        <path d="M350 260 H450" stroke="white" stroke-width="10" />
+                    </svg>
+                </div>
+            </div>
+            <h2>Option 143: The Solid Stack</h2>
+            <p><strong>Geometry:</strong> Architectural Blocks. The G is a literal roof structure. The S is a foundation
+                structure. I is the column connecting them.</p>
+        </div>
+
+        <!-- Concept 144: The Offset Frame (Balanced) -->
+        <div class="concept-card">
+            <div class="check-container">
+                <div class="logo-box dark">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- G: Top Left -->
+                        <text x="100" y="250" font-family="Inter, sans-serif" font-weight="900" font-size="200"
+                            fill="white">G</text>
+                        <!-- G Extension -> Right -->
+                        <path d="M200 100 H450" stroke="white" stroke-width="40" stroke-linecap="butt" />
+
+                        <!-- S: Bottom Right -->
+                        <text x="400" y="400" font-family="Inter, sans-serif" font-weight="900" font-size="200"
+                            fill="white">S</text>
+                        <!-- S Extension -> Left -->
+                        <path d="M350 400 H50" stroke="white" stroke-width="40" stroke-linecap="butt" />
+
+                        <!-- I: Center Vertical -->
+                        <text x="250" y="325" font-family="Inter, sans-serif" font-weight="900" font-size="200"
+                            fill="#f43f5e">I</text>
+
+                    </svg>
+                </div>
+                <div class="logo-box light">
+                    <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- G -->
+                        <text x="100" y="250" font-family="Inter, sans-serif" font-weight="900" font-size="200"
+                            fill="#0f172a">G</text>
+                        <path d="M200 100 H450" stroke="#0f172a" stroke-width="40" stroke-linecap="butt" />
+
+                        <!-- S -->
+                        <text x="400" y="400" font-family="Inter, sans-serif" font-weight="900" font-size="200"
+                            fill="#0f172a">S</text>
+                        <path d="M350 400 H50" stroke="#0f172a" stroke-width="40" stroke-linecap="butt" />
+
+                        <!-- I -->
+                        <text x="250" y="325" font-family="Inter, sans-serif" font-weight="900" font-size="200"
+                            fill="#f43f5e">I</text>
+                    </svg>
+                </div>
+            </div>
+            <h2>Option 144: The Offset Frame</h2>
+            <p><strong>Geometry:</strong> Typography + Beams. Standard heavy letters with added "beam" extensions. G
+                shoots a top beam right. S shoots a bottom beam left.</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

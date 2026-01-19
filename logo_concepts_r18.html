@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSI Corp Logo Concepts - Round 18</title>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #0a0f1c;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 2rem;
+        }
+
+        h1 {
+            margin-bottom: 0.5rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            margin-bottom: 3rem;
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+
+        .concepts-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        .concept-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 1rem;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .concept-card:hover {
+            transform: translateY(-5px);
+            border-color: #3b82f6;
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .logo-box {
+            width: 100%;
+            aspect-ratio: 1;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #05080f;
+            /* Dark bg for check */
+            border-radius: 0.5rem;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .logo-box.light {
+            background: #f3f4f6;
+            /* Light bg for check */
+        }
+
+        .logo-box svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            color: #9ca3af;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            font-size: 0.9rem;
+            color: #6b7280;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>LOGO CONCEPTS - ROUND 18</h1>
+    <span class="subtitle">Solid Shapes & New Colors (Visibility Focused)</span>
+
+    <div class="concepts-container">
+        <!-- Concept 38-Gold: The Solid Illusion -->
+        <div class="concept-card">
+            <div class="logo-box">
+                <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="solidBlue" x1="0" y1="0" x2="500" y2="500">
+                            <stop offset="0%" stop-color="#2563eb" />
+                            <stop offset="100%" stop-color="#0891b2" />
+                        </linearGradient>
+                        <linearGradient id="solidGold" x1="0" y1="0" x2="500" y2="500">
+                            <stop offset="0%" stop-color="#fbbf24" />
+                            <stop offset="100%" stop-color="#d97706" />
+                        </linearGradient>
+                    </defs>
+                    <!-- Body -->
+                    <path d="M150 150 L350 150 L350 210 L210 210 L210 350 L150 290 Z" fill="url(#solidBlue)" />
+                    <path d="M350 210 L350 350 L290 290 L290 270 L210 350 L350 350" fill="url(#solidBlue)"
+                        opacity="0.9" />
+                    <!-- Solid Gold Bar - Visible Everywhere -->
+                    <rect x="250" y="270" width="100" height="20" fill="url(#solidGold)" />
+                </svg>
+            </div>
+            <h2>Option 38-Gold: The Solid Illusion</h2>
+            <p>Revamped Option 38. The bar is now solid GOLD. Perfectly visible on black, white, or blue. Retains the
+                "Impossible" 3D effect.</p>
+        </div>
+
+        <!-- Concept 50: The Atomic G -->
+        <div class="concept-card">
+            <div class="logo-box">
+                <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="atomGrad" x1="0" y1="0" x2="500" y2="500">
+                            <stop offset="0%" stop-color="#3b82f6" />
+                            <stop offset="100%" stop-color="#8b5cf6" />
+                        </linearGradient>
+                    </defs>
+                    <!-- Core G -->
+                    <circle cx="250" cy="250" r="70" fill="url(#atomGrad)" />
+                    <path d="M250 230 L250 270 M230 250 L270 250" stroke="white" stroke-width="10"
+                        stroke-linecap="round" />
+                    <!-- Orbital Rings -->
+                    <ellipse cx="250" cy="250" rx="140" ry="60" stroke="#0ea5e9" stroke-width="15"
+                        transform="rotate(45 250 250)" />
+                    <ellipse cx="250" cy="250" rx="140" ry="60" stroke="#0ea5e9" stroke-width="15"
+                        transform="rotate(-45 250 250)" />
+                </svg>
+            </div>
+            <h2>Option 50: The Atomic G</h2>
+            <p>A solid central nucleus with orbiting rings. Classic tech/science vibe. Completely solid structure.</p>
+        </div>
+
+        <!-- Concept 51: The Diamond Link -->
+        <div class="concept-card">
+            <div class="logo-box">
+                <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="diamGrad" x1="0" y1="0" x2="500" y2="500">
+                            <stop offset="0%" stop-color="#06b6d4" />
+                            <stop offset="100%" stop-color="#3b82f6" />
+                        </linearGradient>
+                    </defs>
+                    <!-- Two interlocking diamonds forming a G-like shape -->
+                    <path d="M250 100 L350 200 L250 300 L150 200 Z" fill="url(#diamGrad)" opacity="0.9" />
+                    <path d="M250 220 L350 320 L250 420 L150 320 Z" fill="url(#diamGrad)" />
+                    <!-- Connection -->
+                    <rect x="230" y="200" width="40" height="120" fill="white" />
+                </svg>
+            </div>
+            <h2>Option 51: The Diamond Link</h2>
+            <p>Two stacked diamonds linked vertically. Represents strength and partnership. Solid geometry.</p>
+        </div>
+
+        <!-- Concept 52: The Box G -->
+        <div class="concept-card">
+            <div class="logo-box">
+                <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="boxGrad" x1="0" y1="0" x2="500" y2="500">
+                            <stop offset="0%" stop-color="#f97316" />
+                            <stop offset="100%" stop-color="#db2777" />
+                        </linearGradient>
+                    </defs>
+                    <!-- Solid Cube with G cut-out effect but fully contained -->
+                    <rect x="150" y="150" width="200" height="200" rx="30" fill="url(#boxGrad)" />
+                    <path d="M250 230 H290 V290 H250 V270 H270 V250 H230 V290" stroke="white" stroke-width="0"
+                        fill="white" />
+                    <!-- Simple white G inside -->
+                    <path
+                        d="M280 200 H220 C208.954 200 200 208.954 200 220 V280 C200 291.046 208.954 300 220 300 H280 C291.046 300 300 291.046 300 280 V240 H250 V260 H280 V280 H220 V220 H280 V200 Z"
+                        fill="white" />
+                </svg>
+            </div>
+            <h2>Option 52: The Box App Icon</h2>
+            <p>A solid gradient app-icon style container with a white G. Guaranteed visibility on any background.</p>
+        </div>
+
+    </div>
+</body>
+
+</html>
