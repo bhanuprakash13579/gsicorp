@@ -6,7 +6,8 @@ function Contact() {
         phone: '',
         email: '',
         subject: '',
-        message: ''
+        message: '',
+        _honey: ''
     })
     const [status, setStatus] = useState({ type: '', message: '' })
     const [loading, setLoading] = useState(false)
@@ -29,7 +30,7 @@ function Contact() {
 
             if (response.ok) {
                 setStatus({ type: 'success', message: 'Message sent successfully! We\'ll get back to you soon.' })
-                setFormData({ name: '', phone: '', email: '', subject: '', message: '' })
+                setFormData({ name: '', phone: '', email: '', subject: '', message: '', _honey: '' })
             } else {
                 throw new Error('Failed to send message')
             }
@@ -160,6 +161,18 @@ function Contact() {
                             />
                         </div>
 
+                        {/* Honeypot — hidden from humans, bots fill it */}
+                        <input
+                            type="text"
+                            name="_honey"
+                            value={formData._honey}
+                            onChange={handleChange}
+                            style={{ display: 'none' }}
+                            tabIndex="-1"
+                            autoComplete="off"
+                            aria-hidden="true"
+                        />
+
                         <button type="submit" className="btn btn-primary form-submit" disabled={loading}>
                             {loading ? 'Sending...' : 'Send Message'}
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -168,11 +181,14 @@ function Contact() {
                             </svg>
                         </button>
 
-                        {status.message && (
-                            <div className={`form-status ${status.type}`}>
-                                {status.message}
-                            </div>
-                        )}
+                        <div
+                            role="status"
+                            aria-live="polite"
+                            aria-atomic="true"
+                            className={`form-status ${status.type}`}
+                        >
+                            {status.message}
+                        </div>
                     </form>
                 </div>
             </div>

@@ -1,6 +1,11 @@
+const allowedOrigins = ['https://gsicorp.in', 'https://www.gsicorp.in', 'http://localhost:5173'];
+
 export default async function handler(req, res) {
-    // Set CORS headers
-    res.setHeader('Access-Control-Allow-Origin', '*');
+    // Restrict CORS to known origins only
+    const origin = req.headers.origin;
+    if (allowedOrigins.includes(origin)) {
+        res.setHeader('Access-Control-Allow-Origin', origin);
+    }
     res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
     res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
 
@@ -13,11 +18,40 @@ export default async function handler(req, res) {
     }
 
     try {
-        const { name, phone, email, subject, message } = req.body;
+        const { name, phone, email, subject, message, _honey } = req.body;
 
-        // Only name and phone are required
+        // Honeypot check — bots fill hidden fields, humans don't
+        if (_honey) {
+            return res.status(200).json({ success: true });
+        }
+
+        // Required fields
         if (!name || !phone) {
             return res.status(400).json({ error: 'Name and phone number are required' });
+        }
+
+        // Length limits
+        if (name.length > 100 || phone.length > 20) {
+            return res.status(400).json({ error: 'Input too long' });
+        }
+        if (email && email.length > 200) {
+            return res.status(400).json({ error: 'Input too long' });
+        }
+        if (subject && subject.length > 200) {
+            return res.status(400).json({ error: 'Input too long' });
+        }
+        if (message && message.length > 2000) {
+            return res.status(400).json({ error: 'Message too long (max 2000 characters)' });
+        }
+
+        // Email format check (if provided)
+        if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+            return res.status(400).json({ error: 'Invalid email address' });
+        }
+
+        // Phone format check — must contain only digits, spaces, +, -, ()
+        if (!/^[0-9+\-\s()]{7,20}$/.test(phone)) {
+            return res.status(400).json({ error: 'Invalid phone number' });
         }
 
         console.log('Contact Form Submission:', {
@@ -25,7 +59,7 @@ export default async function handler(req, res) {
             timestamp: new Date().toISOString()
         });
 
-        // Fire-and-forget — don't await, so the user gets an instant response
+        // Fire-and-forget — respond instantly, save to sheet in background
         const GOOGLE_SCRIPT_URL = process.env.GOOGLE_SCRIPT_URL;
         if (GOOGLE_SCRIPT_URL) {
             fetch(GOOGLE_SCRIPT_URL, {

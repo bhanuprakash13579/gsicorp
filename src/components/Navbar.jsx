@@ -35,6 +35,7 @@ function Navbar({ scrolled }) {
                         className="mobile-menu-btn"
                         onClick={() => setMobileOpen(!mobileOpen)}
                         aria-label="Toggle menu"
+                        aria-expanded={mobileOpen}
                     >
                         <span></span>
                         <span></span>

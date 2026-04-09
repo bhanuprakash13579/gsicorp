@@ -8,6 +8,7 @@ import Portfolio from './components/Portfolio'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import WhatsAppButton from './components/WhatsAppButton'
+import ErrorBoundary from './components/ErrorBoundary'
 
 function App() {
   const [scrolled, setScrolled] = useState(false)
@@ -22,7 +23,7 @@ function App() {
   }, [])
 
   return (
-    <>
+    <ErrorBoundary>
       <div className="animated-bg"></div>
       <Navbar scrolled={scrolled} />
       <main>
@@ -35,7 +36,7 @@ function App() {
       </main>
       <Footer />
       <WhatsAppButton />
-    </>
+    </ErrorBoundary>
   )
 }
 
