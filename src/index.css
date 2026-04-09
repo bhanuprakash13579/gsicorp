@@ -151,10 +151,12 @@ input, textarea {
   transition: var(--transition-base);
 }
 
-.glass-card:hover {
-  border-color: rgba(59, 130, 246, 0.3);
-  box-shadow: var(--shadow-glow);
-  transform: translateY(-4px);
+@media (hover: hover) {
+  .glass-card:hover {
+    border-color: rgba(59, 130, 246, 0.3);
+    box-shadow: var(--shadow-glow);
+    transform: translateY(-4px);
+  }
 }
 
 /* Buttons */
@@ -177,9 +179,11 @@ input, textarea {
   box-shadow: var(--shadow-md);
 }
 
-.btn-primary:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-glow);
+@media (hover: hover) {
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-glow);
+  }
 }
 
 .btn-secondary {
@@ -188,9 +192,11 @@ input, textarea {
   border: 2px solid rgba(255, 255, 255, 0.2);
 }
 
-.btn-secondary:hover {
-  border-color: var(--accent-primary);
-  color: var(--accent-primary);
+@media (hover: hover) {
+  .btn-secondary:hover {
+    border-color: var(--accent-primary);
+    color: var(--accent-primary);
+  }
 }
 
 /* Grid */
@@ -386,7 +392,6 @@ input, textarea {
 }
 
 .navbar-mobile {
-  display: none;
   position: fixed;
   top: 70px;
   left: 0;
@@ -394,10 +399,17 @@ input, textarea {
   background: var(--bg-secondary);
   padding: var(--space-xl);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-8px);
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+  z-index: 999;
 }
 
 .navbar-mobile.open {
-  display: block;
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .navbar-mobile a {
@@ -835,8 +847,10 @@ input, textarea {
   transition: var(--transition-slow);
 }
 
-.portfolio-card:hover .portfolio-image img {
-  transform: scale(1.05);
+@media (hover: hover) {
+  .portfolio-card:hover .portfolio-image img {
+    transform: scale(1.05);
+  }
 }
 
 .portfolio-tag {
@@ -1029,6 +1043,22 @@ input, textarea {
     grid-template-columns: 1fr;
     gap: var(--space-2xl);
   }
+
+  /* Touch-friendly tap targets */
+  .form-group input,
+  .form-group select {
+    min-height: 48px;
+  }
+
+  .btn {
+    min-height: 48px;
+  }
+
+  .mobile-menu-btn {
+    min-width: 44px;
+    min-height: 44px;
+    justify-content: center;
+  }
 }
 
 /* ========== FOOTER ========== */
@@ -1155,6 +1185,87 @@ input, textarea {
 .whatsapp-btn:hover {
   transform: scale(1.1);
   box-shadow: 0 6px 30px rgba(37, 211, 102, 0.6);
+}
+
+/* ========== SMALL PHONES (≤480px) ========== */
+@media (max-width: 480px) {
+  :root {
+    --container-padding: 1rem;
+    --space-3xl: 3rem;
+    --space-4xl: 4rem;
+  }
+
+  .section {
+    padding: var(--space-2xl) 0;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+    margin-bottom: var(--space-2xl);
+  }
+
+  .glass-card {
+    padding: var(--space-lg);
+  }
+
+  /* Hero */
+  .hero {
+    padding-top: 100px;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+  }
+
+  .hero-stats {
+    gap: var(--space-lg);
+    flex-wrap: wrap;
+  }
+
+  .hero-stat {
+    flex: 1;
+    min-width: 80px;
+  }
+
+  .hero-stat h3 {
+    font-size: 1.75rem;
+  }
+
+  /* Navbar mobile menu */
+  .navbar-mobile {
+    padding: var(--space-lg);
+  }
+
+  /* Footer — single column on small phones */
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-brand {
+    grid-column: auto;
+  }
+
+  /* WhatsApp button — smaller and tighter to edge */
+  .whatsapp-btn {
+    bottom: 16px;
+    right: 16px;
+    width: 52px;
+    height: 52px;
+    font-size: 1.5rem;
+  }
+
+  /* Contact form */
+  .contact-form {
+    padding: var(--space-lg);
+  }
 }
 
 /* Scrollbar */
