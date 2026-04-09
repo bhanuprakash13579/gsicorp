@@ -59,14 +59,23 @@ export default async function handler(req, res) {
             timestamp: new Date().toISOString()
         });
 
-        // Fire-and-forget — respond instantly, save to sheet in background
+        // Save to Google Sheets — awaited so Vercel doesn't kill it early
         const GOOGLE_SCRIPT_URL = process.env.GOOGLE_SCRIPT_URL;
         if (GOOGLE_SCRIPT_URL) {
-            fetch(GOOGLE_SCRIPT_URL, {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ name, phone, email, subject, message })
-            }).catch(e => console.error('Failed to save to Google Sheets:', e));
+            const controller = new AbortController();
+            const timeout = setTimeout(() => controller.abort(), 5000);
+            try {
+                await fetch(GOOGLE_SCRIPT_URL, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ name, phone, email, subject, message }),
+                    signal: controller.signal
+                });
+            } catch (e) {
+                console.error('Failed to save to Google Sheets:', e);
+            } finally {
+                clearTimeout(timeout);
+            }
         }
 
         return res.status(200).json({
