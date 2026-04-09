@@ -1,5 +1,3 @@
-import { waitUntil } from '@vercel/functions';
-
 const allowedOrigins = ['https://gsicorp.in', 'https://www.gsicorp.in', 'http://localhost:5173'];
 
 export default async function handler(req, res) {
@@ -61,17 +59,18 @@ export default async function handler(req, res) {
             timestamp: new Date().toISOString()
         });
 
-        // Save to Google Sheets in background — response is instant,
-        // waitUntil keeps the function alive until the fetch completes
+        // Save to Google Sheets — awaited to ensure data is never lost
         const GOOGLE_SCRIPT_URL = process.env.GOOGLE_SCRIPT_URL;
         if (GOOGLE_SCRIPT_URL) {
-            waitUntil(
-                fetch(GOOGLE_SCRIPT_URL, {
+            try {
+                await fetch(GOOGLE_SCRIPT_URL, {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ name, phone, email, subject, message })
-                }).catch(e => console.error('Failed to save to Google Sheets:', e))
-            );
+                });
+            } catch (e) {
+                console.error('Failed to save to Google Sheets:', e);
+            }
         }
 
         return res.status(200).json({
