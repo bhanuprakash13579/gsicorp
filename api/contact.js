@@ -13,38 +13,27 @@ export default async function handler(req, res) {
     }
 
     try {
-        const { name, email, subject, message } = req.body;
+        const { name, phone, email, subject, message } = req.body;
 
-        // Validate required fields
-        if (!name || !email || !subject || !message) {
-            return res.status(400).json({ error: 'All fields are required' });
+        // Only name and phone are required
+        if (!name || !phone) {
+            return res.status(400).json({ error: 'Name and phone number are required' });
         }
 
-        // Log the contact form submission (in production, you'd store this or send email)
         console.log('Contact Form Submission:', {
-            name,
-            email,
-            subject,
-            message,
+            name, phone, email, subject, message,
             timestamp: new Date().toISOString()
         });
 
-        // Option 1: Send to Google Sheets (if configured)
+        // Fire-and-forget — don't await, so the user gets an instant response
         const GOOGLE_SCRIPT_URL = process.env.GOOGLE_SCRIPT_URL;
         if (GOOGLE_SCRIPT_URL) {
-            try {
-                await fetch(GOOGLE_SCRIPT_URL, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ name, email, subject, message })
-                });
-            } catch (e) {
-                console.error('Failed to save to Google Sheets:', e);
-            }
+            fetch(GOOGLE_SCRIPT_URL, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ name, phone, email, subject, message })
+            }).catch(e => console.error('Failed to save to Google Sheets:', e));
         }
-
-        // Option 2: Send email notification (if configured)
-        // You can integrate with services like SendGrid, Resend, etc.
 
         return res.status(200).json({
             success: true,

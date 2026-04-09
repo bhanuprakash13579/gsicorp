@@ -26,10 +26,10 @@ function doPost(e) {
         // Create the sheet and header row if it doesn't exist yet
         if (!sheet) {
             sheet = ss.insertSheet(SHEET_NAME);
-            sheet.appendRow(['Timestamp', 'Name', 'Email', 'Subject', 'Message']);
+            sheet.appendRow(['Timestamp', 'Name', 'Phone', 'Email', 'Subject', 'Message']);
 
             // Style the header row
-            var headerRange = sheet.getRange(1, 1, 1, 5);
+            var headerRange = sheet.getRange(1, 1, 1, 6);
             headerRange.setBackground('#1a237e');
             headerRange.setFontColor('#ffffff');
             headerRange.setFontWeight('bold');
@@ -38,15 +38,17 @@ function doPost(e) {
             // Set column widths
             sheet.setColumnWidth(1, 180); // Timestamp
             sheet.setColumnWidth(2, 150); // Name
-            sheet.setColumnWidth(3, 200); // Email
-            sheet.setColumnWidth(4, 200); // Subject
-            sheet.setColumnWidth(5, 400); // Message
+            sheet.setColumnWidth(3, 150); // Phone
+            sheet.setColumnWidth(4, 200); // Email
+            sheet.setColumnWidth(5, 200); // Subject
+            sheet.setColumnWidth(6, 400); // Message
         }
 
         // Append the new enquiry row
         sheet.appendRow([
             new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' }),
             data.name || '',
+            data.phone || '',
             data.email || '',
             data.subject || '',
             data.message || ''

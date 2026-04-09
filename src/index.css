@@ -959,6 +959,13 @@ input, textarea {
   margin-bottom: var(--space-lg);
 }
 
+.optional-label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-weight: 400;
+  margin-left: 4px;
+}
+
 .form-group label {
   display: block;
   font-size: 0.875rem;

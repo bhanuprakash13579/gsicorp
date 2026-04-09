@@ -3,6 +3,7 @@ import { useState } from 'react'
 function Contact() {
     const [formData, setFormData] = useState({
         name: '',
+        phone: '',
         email: '',
         subject: '',
         message: ''
@@ -28,7 +29,7 @@ function Contact() {
 
             if (response.ok) {
                 setStatus({ type: 'success', message: 'Message sent successfully! We\'ll get back to you soon.' })
-                setFormData({ name: '', email: '', subject: '', message: '' })
+                setFormData({ name: '', phone: '', email: '', subject: '', message: '' })
             } else {
                 throw new Error('Failed to send message')
             }
@@ -112,7 +113,20 @@ function Contact() {
                         </div>
 
                         <div className="form-group">
-                            <label htmlFor="email">Email Address</label>
+                            <label htmlFor="phone">Phone Number</label>
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                value={formData.phone}
+                                onChange={handleChange}
+                                placeholder="+91 99999 99999"
+                                required
+                            />
+                        </div>
+
+                        <div className="form-group">
+                            <label htmlFor="email">Email Address <span className="optional-label">(Optional)</span></label>
                             <input
                                 type="email"
                                 id="email"
@@ -120,12 +134,11 @@ function Contact() {
                                 value={formData.email}
                                 onChange={handleChange}
                                 placeholder="john@example.com"
-                                required
                             />
                         </div>
 
                         <div className="form-group">
-                            <label htmlFor="subject">Subject</label>
+                            <label htmlFor="subject">Subject <span className="optional-label">(Optional)</span></label>
                             <input
                                 type="text"
                                 id="subject"
@@ -133,19 +146,17 @@ function Contact() {
                                 value={formData.subject}
                                 onChange={handleChange}
                                 placeholder="Project Inquiry"
-                                required
                             />
                         </div>
 
                         <div className="form-group">
-                            <label htmlFor="message">Message</label>
+                            <label htmlFor="message">Message <span className="optional-label">(Optional)</span></label>
                             <textarea
                                 id="message"
                                 name="message"
                                 value={formData.message}
                                 onChange={handleChange}
                                 placeholder="Tell us about your project..."
-                                required
                             />
                         </div>
 
